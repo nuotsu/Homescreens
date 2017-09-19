@@ -47,6 +47,7 @@
         transition: var(--transition-slow);
     }
     .homescreens img {
+        float: left;
         position: relative;
         z-index: -2;
         max-height: 200px;
