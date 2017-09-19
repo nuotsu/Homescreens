@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="uploader">
+    <div id="uploader" class="blur">
         <h3>Uploader</h3>
         <span id="close_uploader">×</span>
         <p>
@@ -34,14 +34,7 @@
         </p>
     </div>
 
-    <div id="upload-success">
-        <h3>Homescreen successfully uploaded!</h3>
-        <p>Thank you for your cooperation!</p>
-    </div>
-
-    <div class="homescreens"></div>
-
-    <div class="terms">
+    <div class="terms blur">
         <span id="close_terms">×</span>
         <h3>Terms</h3>
         <p>Please upload <em>ONLY ONE</em> homescreen per person.</p>
@@ -50,6 +43,13 @@
         <p>Uploaded homescreens will be collected and used for art purposes.</p>
         <p>Uploaded homescreens will be made visible on this website.</p>
     </div>
+
+    <div id="upload-success" class="blur">
+        <h3>Homescreen successfully uploaded!</h3>
+        <p>Thank you for your cooperation!</p>
+    </div>
+
+    <div class="homescreens"></div>
 
     <!-- .js -->
         <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
