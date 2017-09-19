@@ -18,9 +18,15 @@
         })
     }
 
+// Loading...
+    $('body').on('DOMNodeInserted', '.homescreens img', function() {
+        $('.loading').fadeOut()
+    })
+
 // Uploader
     $('#close_uploader').click(function() {
         $('#uploader').fadeOut()
+        removeBlurBG()
     })
 
 // Upload Image
@@ -59,17 +65,29 @@
                 })
                 $('label[for=terms-accept]').click()
                 $('#uploader, .terms').fadeOut()
+                removeBlurBG()
 
             // Thank you message
                 $('#upload-success').fadeIn()
                 setTimeout(function() {
                     $('#upload-success').fadeOut()
                 }, 1000*3)
-
         } else {
             $('.error').fadeIn()
         }
     })
+    // Remove Blur
+        function removeBlurBG() {
+            $('.blur-bg.blur').css({
+                '-webkit-backdrop-filter': 'blur(0px) saturate(1)',
+                '-moz-backdrop-filter': 'blur(0px) saturate(1)',
+                'backdrop-filter': 'blur(0px) saturate(1)',
+                'background': 'none'
+            })
+            setTimeout(function() {
+                $('.blur-bg.blur').remove()
+            }, 1000*0.6)
+        }
 
 // Terms
     $('#terms').click(function() {
@@ -83,8 +101,8 @@
     firebase.database().ref().on('value', function(snapshot) {
         $('.homescreens').html('')
         for (var i = 0; i < snapshot.numChildren(); i++) {
-            $('.homescreens').prepend(`
-                <img src="${snapshot.val()[Object.keys(snapshot.val())[i]].homescreen.replace('url(', '').replace(')', '')}">
-            `)
+            $('.homescreens').prepend(
+                `<img src="${snapshot.val()[Object.keys(snapshot.val())[i]].homescreen.replace('url(', '').replace(')', '')}">`
+            )
         }
     })

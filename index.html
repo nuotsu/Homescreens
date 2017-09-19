@@ -12,6 +12,10 @@
 </head>
 
 <body>
+    <div class="loading blur">
+        <img src="img/loading.gif" alt="Loading...">
+    </div>
+
     <div id="uploader" class="blur">
         <h3>Uploader</h3>
         <span id="close_uploader">×</span>
@@ -25,12 +29,20 @@
             <input id="fileReader" type="file" accept="image/*">
         </p>
         <p>
-            <input id="terms-accept" type="checkbox" required>
-            <label for="terms-accept">I accept the</label> <span id="terms">terms</span>.
+            <table>
+                <tr>
+                    <td>
+                        <input id="terms-accept" type="checkbox" required>
+                    </td>
+                    <td style="text-align: left;">
+                        <label for="terms-accept">I have read and<br>accept the</label> <span id="terms">terms</span>.
+                    </td>
+                </tr>
+            </table>
         </p>
         <p>
             <input id="submit" type="submit" value="Submit">
-            <p class="error">Please accept the terms or<br>do not upload screenshots.</p>
+            <p class="error">Please accept the terms or<br>refrain from uploading screenshots.</p>
         </p>
     </div>
 
@@ -42,6 +54,8 @@
         <p>Names (optional) will <em>NOT</em> be made public anywhere.</p>
         <p>Uploaded homescreens will be collected and used for art purposes.</p>
         <p>Uploaded homescreens will be made visible on this website.</p>
+        <br>
+        <p>For more information, feel free to contact <a href="mailto:xzmaru@gmail.com">@nuotsu</a>.</p>
     </div>
 
     <div id="upload-success" class="blur">
@@ -49,6 +63,7 @@
         <p>Thank you for your cooperation!</p>
     </div>
 
+    <div class="blur-bg blur"></div>
     <div class="homescreens"></div>
 
     <!-- .js -->
