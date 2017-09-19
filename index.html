@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <!-- <link rel="icon" href="images/favicon.png"> -->
+    <title>Homescreens</title>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div id="uploader">
+        <h3>Uploader</h3>
+        <span id="close_uploader">×</span>
+        <p>
+            <input id="name" type="text" placeholder="Name (Optional)">
+        </p>
+        <p>
+            <div id="upload">
+                <img src="img/upload.png" alt="Upload">
+            </div>
+            <input id="fileReader" type="file" accept="image/*">
+        </p>
+        <p>
+            <input id="terms-accept" type="checkbox" required>
+            <label for="terms-accept">I accept the</label> <span id="terms">terms</span>.
+        </p>
+        <p>
+            <input id="submit" type="submit" value="Submit">
+            <p class="error">Please accept the terms or<br>do not upload screenshots.</p>
+        </p>
+    </div>
+
+    <div id="upload-success">
+        <h3>Homescreen successfully uploaded!</h3>
+        <p>Thank you for your cooperation!</p>
+    </div>
+
+    <div class="homescreens"></div>
+
+    <div class="terms">
+        <span id="close_terms">×</span>
+        <h3>Terms</h3>
+        <p>Please upload <em>ONLY ONE</em> homescreen per person.</p>
+        <p>Please upload the <em>first page</em> of the homescreen of your smartphone.</p>
+        <p>Names (optional) will <em>NOT</em> be made public anywhere.</p>
+        <p>Uploaded homescreens will be collected and used for art purposes.</p>
+        <p>Uploaded homescreens will be made visible on this website.</p>
+    </div>
+
+    <!-- .js -->
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/uploader.js"></script>
+        <script src="js/homescreens.js"></script>
+</body>
+
+</html>
