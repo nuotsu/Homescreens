@@ -83,10 +83,8 @@
     firebase.database().ref().on('value', function(snapshot) {
         $('.homescreens').html('')
         for (var i = 0; i < snapshot.numChildren(); i++) {
-            firebase.database().ref().child(`hs_${(i+1)}`).on('value', function(snapshot) {
-                $('.homescreens').prepend(`
-                    <img src="${snapshot.val().homescreen.replace('url(', '').replace(')', '')}">
-                `)
-            })
+            $('.homescreens').prepend(`
+                <img src="${snapshot.val()[Object.keys(snapshot.val())[i]].homescreen.replace('url(', '').replace(')', '')}">
+            `)
         }
     })
