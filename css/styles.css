@@ -46,11 +46,11 @@
         z-index: 0;
         transition: var(--transition-slow);
     }
-    .homescreens img {
+    .homescreens span {
+        display: inline-block;
         float: left;
-        position: relative;
-        z-index: -2;
-        max-height: 200px;
+        width: calc(100vw / 6);
+        height: calc(100vw / 6 * 1.7757);
     }
 
 /* Upload Form */
@@ -153,9 +153,6 @@
     .terms h3 { margin: 0 0 5px 0; }
     #upload-success p:not(:last-child),
     .terms p:not(:last-child) { margin: 10px 0;}
-
-/* Upload Success */
-
 
 @supports
     (-webkit-backdrop-filter: var(--blur)) or

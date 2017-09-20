@@ -10,8 +10,16 @@
     firebase.initializeApp(config)
 
     function updateFirebase() {
+        var digits = ''
+            if ( $('.homescreens span').length < 9999 &&
+                 $('.homescreens span').length >= 999) digits = ''
+            if ( $('.homescreens span').length < 999 &&
+                 $('.homescreens span').length >= 99) digits = '0'
+            if ( $('.homescreens span').length < 99 &&
+                 $('.homescreens span').length >= 9) digits = '00'
+            if ( $('.homescreens span').length < 9 ) digits = '000'
         firebase.database().ref(
-            'hs_' + ($('.homescreens img').length + 1)
+            'hs_' + digits + ($('.homescreens span').length + 1)
         ).set({
             name: $('#name').val(),
             homescreen: $('#upload').css('background-image')
@@ -19,7 +27,7 @@
     }
 
 // Loading...
-    $('body').on('DOMNodeInserted', '.homescreens img', function() {
+    $('body').on('DOMNodeInserted', '.homescreens span', function() {
         $('.loading').fadeOut()
     })
 
@@ -101,8 +109,12 @@
     firebase.database().ref().on('value', function(snapshot) {
         $('.homescreens').html('')
         for (var i = 0; i < snapshot.numChildren(); i++) {
-            $('.homescreens').prepend(
-                `<img src="${snapshot.val()[Object.keys(snapshot.val())[i]].homescreen.replace('url(', '').replace(')', '')}">`
-            )
+            $('.homescreens').prepend(`<span class="hs_${i}"></span>`)
+            $(`.homescreens .hs_${i}`).css({
+                'background-image': snapshot.val()[Object.keys(snapshot.val())[i]].homescreen,
+                'background-position': 'center',
+                'background-size': 'cover',
+                'background-repeat': 'no-repeat'
+            })
         }
     })
