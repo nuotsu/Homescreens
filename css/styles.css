@@ -25,14 +25,28 @@
         z-index: 2 !important;
         background: rgba(0,0,0, 0.5);
     }
-    .loading img {
-        position: absolute;
+    .loader {
+        display: inline-block;
+        position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        filter:
-            blur(2px)
-            saturate(10);
+    }
+    .loader span {
+        display: inline-block;
+        margin: 0 auto;
+        width: calc(100vh * 0.25);
+        height: calc(100vh * 0.25);
+        border-radius: 9999px;
+        border: 20px solid #eee;
+        border-left: 20px solid rgb(228, 74, 74);
+        border-right: 20px solid rgb(77, 140, 255);
+        border-top: 20px solid rgb(94, 221, 157);
+        border-bottom: 20px solid rgb(214, 218, 10);
+        animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+        100% { transform: rotate(360deg);}
     }
 
 /* Homescreens */
