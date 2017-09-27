@@ -62,8 +62,36 @@
     .homescreens span {
         display: inline-block;
         float: left;
-        width: calc(100vw / 6);
+        width: calc(100% / 6);
         height: calc(100vw / 6 * 1.7757);
+    }
+
+/* Settings */
+    .settings {
+        position: fixed;
+        left: 50%;
+        bottom: 10px;
+        z-index: 1;
+        transform: translate(-50%, 0);
+        padding: 10px;
+        border: 0.5px solid rgba(0,0,0, 0.5);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+        text-align: center;
+    }
+    .settings p {
+        margin: 5px 0;
+    }
+    #total span {
+        font-weight: bold;
+    }
+    .settings a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: rgb(77, 140, 255);
+    }
+    .settings a:hover {
+        text-decoration: underline;
     }
 
 /* Upload Form */

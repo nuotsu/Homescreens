@@ -29,6 +29,7 @@
 // Loading...
     $('body').on('DOMNodeInserted', '.homescreens span', function() {
         $('.loading').fadeOut()
+        $('#total span').html( $('.homescreens span').length )
     })
 
 // Uploader
@@ -42,17 +43,31 @@
         $('#fileReader').click()
     })
     $('#fileReader').change(function() {
-        var file = this.files[0]
-            rdr = new FileReader()
-        rdr.onload = function() {
-            $('#upload').css({
-                'background-image': `url('${rdr.result}')`,
-                'background-position': 'center',
-                'background-size': 'cover',
-                'background-repeat': 'no-repeat'
-            })
-        }
-        if (file) rdr.readAsDataURL(file)
+        var formData = new FormData()
+        formData.append('image', $('#fileReader')[0].files[0])
+
+        $.ajax({
+            url: "https://api.imgur.com/3/image",
+            type: "POST",
+            datatype: "json",
+            headers: {
+              "Authorization": "Client-ID 1f37facd924fbb3"
+            },
+            data: formData,
+            success: function(response) {
+                console.log(response.data.link)
+
+                $('#upload').css({
+                    'background-image': `url(${response.data.link})`,
+                    'background-position': 'center',
+                    'background-size': 'cover',
+                    'background-repeat': 'no-repeat'
+                })
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        })
     })
 
 // Submit
