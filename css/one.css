@@ -23,8 +23,8 @@
     }
     .homescreens span {
         display: inline-block;
-        width: calc(100% / 4);
-        height: calc(100vw / 4 * 1.7757);
+        width: calc(100vh * 0.9 * 0.5632);
+        height: calc(100vh * 0.9);
         position: absolute;
         left: 50%;
         top: 50%;

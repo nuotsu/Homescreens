@@ -32,7 +32,8 @@
     .homescreens span {
         display: inline-block;
         width: calc(100vh * 0.9);
-        height: calc(100vw / 10);
+        height: 100px;
+        max-width: calc(100vw * 0.9);
         position: absolute;
         left: 50%;
         top: 50%;
