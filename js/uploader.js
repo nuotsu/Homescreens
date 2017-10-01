@@ -44,7 +44,7 @@
     })
     $('#fileReader').change(function() {
         var formData = new FormData()
-        formData.append('image', $('#fileReader')[0].files[0])
+            formData.append('image', $('#fileReader')[0].files[0])
 
         $.ajax({
             url: "https://api.imgur.com/3/image",
@@ -55,8 +55,6 @@
             },
             data: formData,
             success: function(response) {
-                console.log(response.data.link)
-
                 $('#upload').css({
                     'background-image': `url(${response.data.link})`,
                     'background-position': 'center',
