@@ -12,7 +12,7 @@
 // Homescreens
     firebase.database().ref().on('value', function(snapshot) {
         $('.homescreens').html('')
-        var spin = 0
+        var circle = 0
         for (var i = 0; i < snapshot.numChildren(); i++) {
             $('.homescreens').prepend(`<span class="hs_${i}"></span>`)
             $(`.homescreens .hs_${i}`).css({
@@ -20,9 +20,8 @@
                 'background-position': 'left',
                 'background-size': 'contain',
                 'background-repeat': 'no-repeat',
-                'transform': `translate(-50%, -50%) rotate(${spin}deg)`,
-                'opacity': 1
+                'transform': `translate(-50%, -50%) rotate(${circle}deg)`
             })
-            spin += 360 / snapshot.numChildren()
+            circle += 360 / snapshot.numChildren()
         }
     })

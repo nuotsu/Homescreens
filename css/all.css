@@ -12,12 +12,21 @@
         padding: 0;
     }
 
-/* Homescreens */
-    .homescreens {
+/* Sizes */
+    #sizes {
         position: fixed;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    #sizes h3 {
+        margin: 10px 0;
+    }
+
+/* Homescreens */
+    .homescreens {
+        margin: 0 auto;
         width: 100vw;
         height: 100vh;
     }
@@ -28,5 +37,6 @@
         position: absolute;
         left: 50%;
         top: 50%;
+        z-index: 0;
         transform: translate(-50%, -50%);
     }

@@ -15,6 +15,14 @@
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }
+    a {
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(77, 140, 255);
+    }
+    a:hover {
+        text-decoration: underline;
+    }
     em { color: red; }
     .blur { background: rgba(255,255,255, 0.9); }
     .blur-bg { background: rgba(255,255,255, 0.5); }
@@ -79,18 +87,18 @@
         box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
         text-align: center;
     }
-    .settings p {
-        margin: 5px 0;
-    }
+    .settings p { margin: 5px 0; }
     #total span {
         font-weight: bold;
     }
-    .settings a {
+    .settings a,
+    #sizes a {
+        cursor: pointer;
         margin: 0 10px;
         text-decoration: none;
-        color: rgb(77, 140, 255);
     }
-    .settings a:hover {
+    .settings a:hover,
+    #sizes a:hover {
         text-decoration: underline;
     }
 
@@ -98,7 +106,7 @@
     #uploader {
         position: fixed;
         left: 50%;
-        top: 50%;
+        top: 45%;
         z-index: 1;
         transform: translate(-50%, -50%);
         padding: 5px;
@@ -157,6 +165,9 @@
         opacity: 1;
     }
     #fileReader { display: none; }
+    select#size {
+        margin: 0 0 10px 0;
+    }
     #submit { margin: 10px 0; }
     .error {
         display: none;
@@ -171,9 +182,9 @@
     #terms-accept { margin: 0 10px; }
     #terms {
         cursor: pointer;
-        text-decoration: underline;
-        color: blue;
+        color: rgb(77, 140, 255);
     }
+    #terms:hover { text-decoration: underline; }
     #upload-success,
     .terms {
         display: none;

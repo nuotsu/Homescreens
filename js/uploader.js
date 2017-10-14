@@ -22,7 +22,8 @@
             'hs_' + digits + ($('.homescreens span').length + 1)
         ).set({
             name: $('#name').val(),
-            homescreen: $('#upload').css('background-image')
+            homescreen: $('#upload').css('background-image'),
+            size: $('select#size').val()
         })
     }
 
@@ -37,7 +38,6 @@
         $('#uploader').fadeOut()
         removeBlurBG()
     })
-
 // Upload Image
     $('#upload').click(function() {
         $('#fileReader').click()
@@ -71,7 +71,8 @@
 // Submit
     $('#submit').click(function() {
         if ($('#terms-accept').prop('checked') == true &&
-            $('#upload').css('background-image') != 'none') {
+            $('#upload').css('background-image') != 'none' &&
+            $('select#size').val() != null) {
             updateFirebase()
 
             // Reset Uploader
@@ -117,6 +118,14 @@
     $('#close_terms').click(function() {
         $('.terms').fadeOut()
     })
+
+    // Copy Link
+        $('#copyLink').click(function() {
+            $(this).append(`<input id="googl" type="text">`)
+            $('#googl').val('https://goo.gl/kFZFtz').select()
+            document.execCommand('copy')
+            $('#googl').remove()
+        })
 
 // Homescreens
     firebase.database().ref().on('value', function(snapshot) {
