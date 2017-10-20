@@ -80,7 +80,7 @@
     #uploader {
         position: fixed;
         left: 50%;
-        top: 45%;
+        top: 50%;
         z-index: 1;
         transform: translate(-50%, -50%);
         padding: 5px;
@@ -228,3 +228,7 @@
             backdrop-filter: var(--blur);
         }
     }
+
+@media screen and (max-width: 320px) {
+    .settings { display: none; }
+}

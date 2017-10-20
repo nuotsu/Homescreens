@@ -36,6 +36,7 @@
 // Uploader
     $('#close_uploader').click(function() {
         $('#uploader').fadeOut()
+        $('.settings').fadeIn()
         removeBlurBG()
     })
 // Upload Image
