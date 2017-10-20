@@ -12,18 +12,6 @@
         padding: 0;
     }
 
-/* Sizes */
-    #sizes {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-    #sizes h3 {
-        margin: 10px 0;
-    }
-
 /* Homescreens */
     .homescreens {
         margin: 0 auto;

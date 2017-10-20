@@ -1,0 +1,32 @@
+/* Fonts */
+
+
+/* Variables */
+    :root {
+
+    }
+
+/* Common */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+/* Homescreens */
+    .homescreens {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+    }
+    .homescreens .container {
+        width: calc(100vh * 0.9 * 0.5632);
+        height: calc(100vh * 0.9);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .homescreens .container span {
+        display: block;
+        width: 100%;
+    }

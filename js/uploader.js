@@ -68,6 +68,22 @@
         })
     })
 
+// Terms
+    $('#terms').click(function() {
+        $('.terms').fadeIn()
+    })
+    $('#close_terms').click(function() {
+        $('.terms').fadeOut()
+    })
+
+    // Copy Link
+        $('#copyLink').click(function() {
+            $(this).append(`<input id="googl" type="text">`)
+            $('#googl').val('https://goo.gl/kFZFtz').select()
+            document.execCommand('copy')
+            $('#googl').remove()
+        })
+
 // Submit
     $('#submit').click(function() {
         if ($('#terms-accept').prop('checked') == true &&
@@ -111,21 +127,10 @@
             }, 1000*0.6)
         }
 
-// Terms
-    $('#terms').click(function() {
-        $('.terms').fadeIn()
+// Choose Art
+    $('.settings select').change(function() {
+        window.location.href = `${$(this).attr('id')}/${$(this).val()}.html`
     })
-    $('#close_terms').click(function() {
-        $('.terms').fadeOut()
-    })
-
-    // Copy Link
-        $('#copyLink').click(function() {
-            $(this).append(`<input id="googl" type="text">`)
-            $('#googl').val('https://goo.gl/kFZFtz').select()
-            document.execCommand('copy')
-            $('#googl').remove()
-        })
 
 // Homescreens
     firebase.database().ref().on('value', function(snapshot) {

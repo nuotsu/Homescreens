@@ -3,6 +3,8 @@
 
 /* Variables */
     :root {
+        --blue: rgb(77, 140, 255);
+
         --blur: blur(10px) saturate(1.8);
         --transition: 0.2s ease-in-out;
         --transition-slow: 0.6s ease-in-out;
@@ -18,7 +20,7 @@
     a {
         cursor: pointer;
         text-decoration: none;
-        color: rgb(77, 140, 255);
+        color: var(--blue);
     }
     a:hover {
         text-decoration: underline;
@@ -72,34 +74,6 @@
         float: left;
         width: calc(100% / 6);
         height: calc(100vw / 6 * 1.7757);
-    }
-
-/* Settings */
-    .settings {
-        position: fixed;
-        left: 50%;
-        bottom: 10px;
-        z-index: 1;
-        transform: translate(-50%, 0);
-        padding: 10px;
-        border: 0.5px solid rgba(0,0,0, 0.5);
-        border-radius: 5px;
-        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
-        text-align: center;
-    }
-    .settings p { margin: 5px 0; }
-    #total span {
-        font-weight: bold;
-    }
-    .settings a,
-    #sizes a {
-        cursor: pointer;
-        margin: 0 10px;
-        text-decoration: none;
-    }
-    .settings a:hover,
-    #sizes a:hover {
-        text-decoration: underline;
     }
 
 /* Upload Form */
@@ -204,6 +178,45 @@
     .terms h3 { margin: 0 0 5px 0; }
     #upload-success p:not(:last-child),
     .terms p:not(:last-child) { margin: 10px 0;}
+
+/* Settings */
+    .settings {
+        position: fixed;
+        left: 50%;
+        bottom: 10px;
+        z-index: 1;
+        transform: translate(-50%, 0);
+        padding: 10px;
+        border: 0.5px solid rgba(0,0,0, 0.5);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+    }
+    .settings p { margin: 5px 0; }
+    #total {
+        display: table;
+        margin: 0 auto;
+    }
+    #total span { font-weight: bold; }
+    .settings a,
+    .settings select {
+        display: inline-block;
+        width: 60px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    .settings select {
+        -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        outline: none;
+        border: none;
+        background: rgba(255,255,255, 0);
+        color: var(--blue);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+    }
+    .settings a:hover,
+    .settings select:hover { text-decoration: underline; }
 
 @supports
     (-webkit-backdrop-filter: var(--blur)) or
