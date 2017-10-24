@@ -48,11 +48,11 @@
         height: calc(100vh / 4);
         border-radius: 9999px;
         border: 20px solid #eee;
-        border-left: 20px solid rgb(228, 74, 74);
-        border-right: 20px solid rgb(77, 140, 255);
-        border-top: 20px solid rgb(94, 221, 157);
-        border-bottom: 20px solid rgb(214, 218, 10);
-        animation: spin 2s linear infinite;
+        border-left: 20px solid var(--blue);
+        border-right: 20px solid rgba(77, 140, 255, 0);
+        border-top: 20px solid var(--blue);
+        border-bottom: 20px solid rgba(214, 218, 10, 0);
+        animation: spin .55s linear infinite;
     }
     @keyframes spin {
         100% { transform: rotate(360deg);}
