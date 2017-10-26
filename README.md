@@ -13,6 +13,15 @@ My BFA show will be an installation of homescreens, displayed in different ways.
 For this installation overall, I want to show that each homescreen tells its own story and that each is of work of art by itself, hence the framing of the individual displays. At the entrance/exit of the room will be a station that displays, along with my statement and other documents, a booth where visitors can contribute to the collective work by uploading their homescreens.
 Some may find my installation of the homescreens as not being original or creative since I am simply presenting (some of) them untouched and unedited, akin to Duchamp’s Fountain. However, like Duchamp, I believe the art is in the homescreens themselves as every user crafts their own homescreen and chooses to personalize them.
 
+## Equipment
+- Gallery (Belcher, Black)
+- `x 1~3` projectors
+- `x 1~3` Screens for projection
+- `x 8+` displays (iPhones, iPads, or small monitors)
+    - `8+` for 'Homescreen Art'
+    - `1` for Uploader
+- `x 2~4` long HDMI cables
+
 ## Sketches
 ![sketch](https://i.imgur.com/A8dbxZk.jpg)
 
