@@ -36,11 +36,10 @@
         // Sizes
             if (window.location.href.indexOf('all.html') < 0) {
                 var size = window.location.href.split('divide/')[1].replace('.html', '')
-                $(`.homescreens .container span[data-size=${size}]`)
-                    .addClass('showSize')
+                $(`.homescreens .container span[data-size=${size}]`).addClass('showSize')
                 $('.homescreens .container span:not(.showSize)').remove()
                 var hsLen = $('.container span').length
-                    containerSize = $('.container').height() / hsLen
+                    containerSize = Math.ceil($('.container').height() / hsLen)
                 for (var i = 0; i < hsLen; i++)
                     $(`.homescreens .container span`).eq(i).css({
                         'height': containerSize,
@@ -48,7 +47,7 @@
                     })
             } else {
                 var hsLen = $('.container span').length
-                    containerSize = $('.container').height() / hsLen
+                    containerSize = Math.ceil($('.container').height() / hsLen)
                 for (var i = 0; i < hsLen; i++)
                     $(`.homescreens .container span`).eq(i).css({
                         'height': containerSize,

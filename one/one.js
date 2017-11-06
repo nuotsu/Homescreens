@@ -30,7 +30,7 @@
                 var rHS = Math.floor(Math.random() * nHS)
                 $('.homescreens.one span').css('opacity', 0)
                 $('.homescreens.one span').eq(rHS).css('opacity', 1)
-            }, 1000 * 0.25)
+            }, 250)
     })
 
     $('.homescreens').hide().fadeIn(3000)
