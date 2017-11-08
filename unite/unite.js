@@ -70,4 +70,4 @@
         return $(shuffled)
     }
     $('.homescreens').click(hsUnite)
-    //setInterval(hsUnite)
+    // setInterval(hsUnite, 250)

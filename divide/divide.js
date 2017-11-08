@@ -76,4 +76,4 @@
         return $(shuffled)
     }
     $('.homescreens').click(hsDivide)
-    //setInterval(hsDivide)
+    // setInterval(hsDivide, 250)

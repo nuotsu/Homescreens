@@ -72,8 +72,8 @@
     .homescreens span {
         display: inline-block;
         float: left;
-        width: calc(100% / 8);
-        height: calc(100vw / 8 * 1.7757);
+        width: calc(100% / 12);
+        height: calc(100vw / 12 * 1.7757);
     }
 
 /* Upload Form */
