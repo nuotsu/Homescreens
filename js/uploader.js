@@ -39,6 +39,10 @@
         $('.settings').fadeIn()
         removeBlurBG()
     })
+    $('#open_uploader').click(function() {
+        $('#uploader').fadeIn()
+        enableBlur()
+    })
 // Upload Image
     $('#upload').click(function() {
         $('#fileReader').click()
@@ -117,15 +121,19 @@
     })
     // Remove Blur
         function removeBlurBG() {
-            $('.blur-bg.blur').css({
-                '-webkit-backdrop-filter': 'blur(0px) saturate(1)',
-                '-moz-backdrop-filter': 'blur(0px) saturate(1)',
-                'backdrop-filter': 'blur(0px) saturate(1)',
+            $('.blur-bg').removeClass('blur').css({
                 'background': 'none'
             })
             setTimeout(function() {
-                $('.blur-bg.blur').remove()
+                $('.blur-bg.blur').fadeOut()
             }, 1000*0.6)
+        }
+    // Enable Blur
+        function enableBlur() {
+            $('body').fadeIn('<div class="blur-bg"></div>')
+            $('.blur-bg').addClass('blur').css({
+                'background': 'rgba(255,255,255, 0.5)'
+            })
         }
 
 // Choose Art
