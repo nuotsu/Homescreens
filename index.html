@@ -2,123 +2,131 @@
 <html>
 
 <head>
+    <title></title>
+    <!-- <link rel="icon" href="img/favicon.png"> -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-    <meta property="og:image" content="img/favicon.png">
-
-    <link rel="icon" href="img/favicon.png">
-    <title>Homescreens</title>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-    <div class="loading blur">
-        <span class="loader"><span></span></span>
-    </div>
-
-    <div class="blur-bg blur"></div>
-    <div class="homescreens"></div>
-
-    <div class="settings blur">
-        <p id="total">Total Homescreens: <span>0</span></p>
-        <p>
-            <select id="unite">
-                <option value="../index" default>"UNITE"</option>
-                <option value="all">All</option>
-                <option value="iS">iPhone (S)</option>
-                <option value="iM">iPhone (M)</option>
-                <option value="iL">iPhone (L)</option>
-                <option value="iX">iPhone X</option>
-                <option value="android">Android</option>
-            </select>
-            <select id="divide">
-                <option value="../index" default>"DIVIDE"</option>
-                <option value="all">All</option>
-                <option value="iS">iPhone (S)</option>
-                <option value="iM">iPhone (M)</option>
-                <option value="iL">iPhone (L)</option>
-                <option value="iX">iPhone X</option>
-                <option value="android">Android</option>
-            </select>
-            <br>
-            <a href="one/index.html">"ONE"</a>
-            <a href="circle/index.html">"CIRCLE"</a>
-            <br>
-            <a href="all/index.html">"ALL"</a>
-            <a id="open_uploader">Uploader</a>
-        </p>
-    </div>
-
-    <div id="uploader" class="blur">
-        <h3>Uploader</h3>
-        <span id="close_uploader">×</span>
-        <p>
-            <input id="name" type="text" placeholder="Name (Optional)">
-        </p>
-        <p>
-            <div id="upload">
-                <img src="img/upload.png" alt="Upload">
-            </div>
-            <input id="fileReader" type="file" accept="image/*">
-        </p>
-        <p>
-            <select id="size">
-                <option selected disabled hidden>Choose size...</option>
-                <optgroup label="iPhone">
-                    <option value="iS">5 / 5s / SE</option>
-                    <option value="iM">6 / 6s / 7 / 8</option>
-                    <option value="iL">6+ / 6s+ / 7+ / 8+</option>
-                    <option value="iX">X</option>
-                </optgroup>
-                <optgroup label="Android">
-                    <option value="android">Android</option>
-                </optgroup>
-            </select>
-        </p>
-        <p>
-            <table>
+    <details id="nav"><summary>Homescreens</summary>
+        <details open><summary>Information</summary>
+            <table id="totals">
                 <tr>
-                    <td>
-                        <input id="terms-accept" type="checkbox" required>
-                    </td>
-                    <td style="text-align: left;">
-                        <label for="terms-accept">I have read and<br>accept the</label> <span id="terms">terms</span>.
+                    <td colspan="2">
+                        <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#proposal" target="_blank">
+                            Proposal (What is this?)
+                        </a>
                     </td>
                 </tr>
+                <tr>
+                    <td>iPhone (S)</td>
+                    <td id="total_iS">0</td>
+                </tr>
+                <tr>
+                    <td>iPhone (M)</td>
+                    <td id="total_iM">0</td>
+                </tr>
+                <tr>
+                    <td>iPhone (L)</td>
+                    <td id="total_iL">0</td>
+                </tr>
+                <tr>
+                    <td>iPhone X</td>
+                    <td id="total_iX">0</td>
+                </tr>
+                <tr>
+                    <td>Android</td>
+                    <td id="total_a">0</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th id="total_HS">0</th>
+                </tr>
             </table>
-        </p>
-        <p>
-            <input id="submit" type="submit" value="Submit">
-            <p class="error">Please accept the terms or<br>refrain from uploading screenshots.</p>
-        </p>
-        <p>
-            <a id="what" href="https://github.com/nuotsu/Homescreens/blob/master/README.md" target="_blank">What is this?</a>
-        </p>
-    </div>
+        </details>
 
-    <div class="terms blur">
-        <span id="close_terms">×</span>
-        <h3>Terms</h3>
-        <p>Please upload <em>ONLY ONE</em> homescreen per person.</p>
-        <p>Please upload the <em>first page</em> of the homescreen of your smartphone.</p>
-        <p>Names (optional) will <em>NOT</em> be made public anywhere.</p>
-        <p>Uploaded homescreens will be collected and used for art purposes.</p>
-        <p>Uploaded homescreens will be made visible on this website and my B.F.A. show.</p>
-        <p>Feel free to share! (<a id="copyLink">Copy link</a>) (<a href="img/qr.png" target="_blank">QR Code</a>)</p>
-        <br>
-        <p>For more information, feel free to contact <a href="mailto:xzmaru@gmail.com">@nuotsu</a>.</p>
-    </div>
+        <details open><summary>Art</summary>
+            <table id="art">
+                <tr>
+                    <td><select id="unite">
+                        <option selected disabled default>"UNITE"</option>
+                        <option value="all">All</option>
+                        <option value="iS">iPhone (S)</option>
+                        <option value="iM">iPhone (M)</option>
+                        <option value="iL">iPhone (L)</option>
+                        <option value="iX">iPhone X</option>
+                        <option value="a">Android</option>
+                    </select></td>
+                    <td><select id="divide">
+                        <option selected disabled default>"DIVIDE"</option>
+                        <option value="all">All</option>
+                        <option value="iS">iPhone (S)</option>
+                        <option value="iM">iPhone (M)</option>
+                        <option value="iL">iPhone (L)</option>
+                        <option value="iX">iPhone X</option>
+                        <option value="a">Android</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><a href="one.html">"ONE"</a></td>
+                </tr>
+            </table>
+        </details>
 
-    <div id="upload-success" class="blur">
-        <h3>Homescreen successfully uploaded!</h3>
-        <p>Thank you for your cooperation!</p>
-    </div>
+        <details><summary>Uploader</summary>
+            <table id="uploader">
+                <tr>
+                    <td><input id="name" type="text" placeholder="Name (Optional)"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="upload" src="img/upload.png">
+                        <input id="formReader" type="file" accept="image/*">
+                    </td>
+                </tr>
+                <tr>
+                    <td><select id="size">
+                        <option selected disabled default>Choose size...</option>
+                        <optgroup label="iPhone">
+                            <option value="iS">5 / 5s / SE</option>
+                            <option value="iM">6 / 6s / 7 / 8</option>
+                            <option value="iL">6+ / 6s+ / 7+ / 8+</option>
+                            <option value="iX">X</option>
+                        </optgroup>
+                        <optgroup label="Android">
+                            <option value="a">Android</option>
+                        </optgroup>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="terms" type="checkbox">
+                        <label for="terms">
+                            I have read & accept the
+                            <a href="https://github.com/nuotsu/Homescreens#terms" target="_blank">terms</a>.
+                        </label>
+                    </td>
+                </tr>
+                <tr id="error">
+                    <td>Some kind of error... try again ;)</td>
+                </tr>
+                <tr>
+                    <td><input id="submit" type="submit"></td>
+                </tr>
+            </table>
+        </details>
+    </details>
+
+    <main id="homescreens"></main>
 
     <!-- .js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-        <script src="js/uploader.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

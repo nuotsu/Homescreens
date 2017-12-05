@@ -1,239 +1,134 @@
 /* Fonts */
-    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @font-face {
+        font-family: 'SFPD';
+        src: url('../fonts/SF-Pro-Display-Regular.otf');
+    }
+    @font-face {
+        font-family: 'SFPD Bold';
+        src: url('../fonts/SF-Pro-Display-Bold.otf');
+    }
 
 /* Variables */
     :root {
-        --blue: rgb(77, 140, 255);
 
-        --blur: blur(10px) saturate(1.8);
-        --transition: 0.2s ease-in-out;
-        --transition-slow: 0.6s ease-in-out;
     }
 
 /* Common */
     * {
         margin: 0;
         padding: 0;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-family: 'SFPD';
+        font-size: 1em;
     }
-    a {
+    a,
+    select:not(#size) {
         cursor: pointer;
+        outline: none;
+        border: none;
         text-decoration: none;
-        color: var(--blue);
+        color: red;
     }
     a:hover {
         text-decoration: underline;
     }
-    em { color: red; }
-    .blur { background: rgba(255,255,255, 0.9); }
-    .blur-bg { background: rgba(255,255,255, 0.5); }
-
-/* Loading */
-    .loading {
-        z-index: 2 !important;
-        background: rgba(0,0,0, 0.8);
-    }
-    .loader {
-        display: inline-block;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .loader span {
-        display: inline-block;
-        margin: 0 auto;
-        width: calc(100vh / 4);
-        height: calc(100vh / 4);
-        border-radius: 9999px;
-        border: 20px solid #eee;
-        border-left: 20px solid var(--blue);
-        border-right: 20px solid rgba(77, 140, 255, 0);
-        border-top: 20px solid var(--blue);
-        border-bottom: 20px solid rgba(214, 218, 10, 0);
-        animation: spin .55s linear infinite;
-    }
-    @keyframes spin {
-        100% { transform: rotate(360deg);}
+    input[type="text"] {
+        outline: none;
+        border: none;
+        padding: 4px;
+        border-radius: 3px;
+        background: rgba(255,255,255, 0.7);
+        text-align: center;
     }
 
 /* Homescreens */
-    .loading,
-    .blur-bg {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 0;
-        transition: var(--transition-slow);
-    }
-    .homescreens span {
+    #homescreens .hs {
         display: inline-block;
         float: left;
-        width: calc(100% / 12);
-        height: calc(100vw / 12 * 1.7757);
+        width: calc(100vw / 15);
+        height: calc(100vw / 15);
+        background: center/cover no-repeat;
     }
 
-/* Upload Form */
-    #uploader {
+/* Navigation */
+    #nav {
         position: fixed;
         left: 50%;
-        top: 50%;
-        z-index: 1;
-        transform: translate(-50%, -50%);
-        padding: 5px;
-        border: 0.5px solid rgba(0,0,0, 0.5);
-        border-radius: 5px;
-        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
-        text-align: center;
-    }
-    #close_uploader,
-    #close_terms {
-        cursor: pointer;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 0 4px;
-    }
-    #uploader h3 { margin: 0 0 3px 0; }
-    #name {
-        padding: 4px;
-        width: 200px;
-        outline: none;
-        border: none;
-        border-radius: 4px;
-        background: rgba(0,0,0, 0.1);
-        text-align: center;
-        font-size: 16px;
-        transition: var(--transition);
-    }
-    #name:focus {
-        background: rgba(0,0,0, 0.7);
-        color: #fff;
-    }
-    #upload {
-        cursor: pointer;
-        position: relative;
-        margin: 20px auto;
-        width: 100px;
-        height: 100px;
-        border-radius: 4px;
-        background: rgba(0,0,0, 0.1);
-        transition: var(--transition);
-    }
-    #upload img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 50px;
-        opacity: 0.3;
-        transition: var(--transition);
-    }
-    #upload:hover {
-        background: rgba(0,0,0, 0.2);
-    }
-    #upload:hover img {
-        opacity: 1;
-    }
-    #fileReader { display: none; }
-    select#size {
-        margin: 0 0 10px 0;
-    }
-    #submit { margin: 10px 0; }
-    .error {
-        display: none;
-        color: red;
-        font-size: 12px;
-    }
-    #what {
-        display: inline-block;
-        margin: 10px 0;
-        font-size: 12px;
-    }
-
-/* Terms */
-    table {
-        margin: 0 auto;
-    }
-    #terms-accept { margin: 0 10px; }
-    #terms {
-        cursor: pointer;
-        color: rgb(77, 140, 255);
-    }
-    #terms:hover { text-decoration: underline; }
-    #upload-success,
-    .terms {
-        display: none;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        z-index: 1;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        min-width: 250px;
-        border: 0.5px solid rgba(0,0,0, 0.5);
-        border-radius: 4px;
-        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
-    }
-    #upload-success { text-align: center; }
-    #upload-success h3,
-    .terms h3 { margin: 0 0 5px 0; }
-    #upload-success p:not(:last-child),
-    .terms p:not(:last-child) { margin: 10px 0;}
-
-/* Settings */
-    .settings {
-        position: fixed;
-        left: 50%;
-        bottom: 10px;
-        z-index: 1;
+        bottom: 0;
         transform: translate(-50%, 0);
         padding: 10px;
-        border: 0.5px solid rgba(0,0,0, 0.5);
-        border-radius: 5px;
-        box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+        min-width: 280px;
+        max-height: 90vh;
+        overflow: scroll;
+        border-radius: 4px 4px 0 0;
+        background: #fff;
     }
-    .settings p { margin: 5px 0; }
-    #total {
-        display: table;
+    #nav > summary {
+        width: 100%;
+        font-size: 24px;
+    }
+    summary {
+        cursor: pointer;
+        outline: none;
+        font-family: 'SFPD Bold';
+    }
+    #nav details {
+        margin: 10px 0 0 0;
+        padding: 4px;
+        border-radius: 4px;
+        background: rgba(255,0,0, 0.1);
+    }
+    #nav details table {
         margin: 0 auto;
     }
-    #total span { font-weight: bold; }
-    .settings a,
-    .settings select {
-        display: inline-block;
-        width: 60px;
-        margin: 0 10px;
-        text-decoration: none;
+    #nav details table td {
+        padding: 2px;
     }
-    .settings select {
+    #totals {
+        text-align: center;
+    }
+
+/* Art */
+    #art {
+        text-align: center;
+    }
+    #art select {
         -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-        outline: none;
-        border: none;
-        background: rgba(255,255,255, 0);
-        color: var(--blue);
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
     }
-    .settings a:hover,
-    .settings select:hover { text-decoration: underline; }
-
-@supports
-    (-webkit-backdrop-filter: var(--blur)) or
-    (-moz-backdrop-filter: var(--blur)) or
-    (backdrop-filter: var(--blur)) {
-        .blur {
-            -webkit-backdrop-filter: var(--blur);
-            -moz-backdrop-filter: var(--blur);
-            backdrop-filter: var(--blur);
-        }
+    #art select,
+    #art a {
+        padding: 4px;
+        border-radius: 4px;
+        background: red;
+        color: #fff;
+    }
+    #art select:hover,
+    #art a:hover {
+        text-decoration: none;
     }
 
-@media screen and (max-width: 320px) {
-    .settings { display: none; }
-}
+/* Uploader */
+    #uploader {
+        text-align: center;
+    }
+    #upload {
+        cursor: pointer;
+        width: 50px;
+        padding: 25px;
+        border-radius: 3px;
+        background:
+            rgba(255,255,255, 0.7)
+            center/cover no-repeat;
+    }
+    #formReader {
+        display: none;
+    }
+    #error {
+        display: none;
+    }
+    #error td {
+        font-family: monospace;
+        background: rgba(255,255,255, 0.7);
+        color: red;
+    }
