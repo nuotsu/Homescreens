@@ -10,7 +10,7 @@
 
 /* Variables */
     :root {
-
+        --blur: blur(10px) saturate(1.8);
     }
 
 /* Common */
@@ -60,7 +60,7 @@
         max-height: 90vh;
         overflow: scroll;
         border-radius: 4px 4px 0 0;
-        background: #fff;
+        background: rgba(255,255,255, 0.98);
     }
     #nav > summary {
         width: 100%;
@@ -132,3 +132,19 @@
         background: rgba(255,255,255, 0.7);
         color: red;
     }
+
+@supports
+    (-webkit-backdrop-filter: var(--blur)) or
+    (-moz-backdrop-filter: var(--blur)) or
+    (-ms-backdrop-filter: var(--blur)) or
+    (-o-backdrop-filter: var(--blur)) or
+    (backdrop-filter: var(--blur)) {
+    #nav {
+        -webkit-backdrop-filter: var(--blur);
+        -moz-backdrop-filter: var(--blur);
+        -ms-backdrop-filter: var(--blur);
+        -o-backdrop-filter: var(--blur);
+        backdrop-filter: var(--blur);
+        background: rgba(255,255,255, 0.9);
+    }
+}
