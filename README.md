@@ -3,7 +3,7 @@
 
 https://nuotsu.github.io/Homescreens
 
-![v3](https://i.imgur.com/iv1Ouri.png)
+![v4](https://i.imgur.com/3oeX2pR.png)
 
 ## Proposal
 The homescreen is the page(s) that lists applications and notifications of smartphones and computers. They initially look the same as they display the default apps and wallpapers, but their appearances can and will change as users customize their homescreens through apps, the arrangement of those apps, wallpapers and themes, and more. Because users personalize them, the homescreens are able to present the users’ personality, creativity, and identity—it becomes part of the user. I believe smart devices are an extension of the self, and homescreens are reflections of the self that show personality and individuality.
@@ -17,18 +17,18 @@ Some may find my installation of the homescreens as not being original or creati
 - Gallery (Belcher, Black)
 - `x 1~3` projectors
 - `x 1~3` Screens for projection
-- `x 8+` displays (iPhones, iPads, or small monitors)
-    - `8+` for 'Homescreen Art'
+- `x 4+` displays (iPhones, iPads, or small monitors)
+    - `4+` for 'Homescreen Art'
     - `1` for Uploader
 - `x 2~4` long HDMI cables
 
 ## Sketches
-![sketch](https://i.imgur.com/A8dbxZk.jpg)
+[<img src="https://i.imgur.com/A8dbxZk.jpg" height="600">](https://i.imgur.com/A8dbxZk.jpg)
 
 ## Homescreen Art
-| _"UNITE"_<br>All | _"UNITE"_<br>iPhone (L) | _"DIVIDE"_<br>All | _"DIVIDE"_<br>iPhone (L) | _"ONE"_ | _"CIRCLE"_ |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| [<img src="https://i.imgur.com/MKCcvjl.jpg" max-height="250">](https://nuotsu.github.io/Homescreens/unite/all.html) | [<img src="https://i.imgur.com/AcXcIVZ.jpg" max-height="250">](https://nuotsu.github.io/Homescreens/unite/iL.html) | [<img src="https://i.imgur.com/BijTNic.jpg" max-height="250">](https://nuotsu.github.io/Homescreens/divide/all.html) | [<img src="https://i.imgur.com/vnTLzFm.jpg" max-height="250">](https://nuotsu.github.io/Homescreens/divide/iL.html) | [<img src="https://media.giphy.com/media/xT1R9V5pRidHyXzpkI/giphy.gif" max-height="250">](https://nuotsu.github.io/Homescreens/one/index.html) | [<img src="https://i.imgur.com/mwh62fX.jpg" max-height="250">](https://nuotsu.github.io/Homescreens/circle/index.html) |
+"UNITE"|"DIVIDE"|"ONE"
+:-----:|:------:|:---:
+[<img src="https://i.imgur.com/NB84XCK.png" height="250">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="250">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://media.giphy.com/media/xT0xesj814PoE4PWwM/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/one.html)
 
 ## Terms
 - Please upload _ONLY ONE_ homescreen per person.
