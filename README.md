@@ -26,9 +26,9 @@ Some may find my installation of the homescreens as not being original or creati
 <img src="https://i.imgur.com/A8dbxZk.jpg" height="600">
 
 ## Homescreen Art
-"UNITE"|"DIVIDE"|"ONE"
-:-----:|:------:|:---:
-[<img src="https://i.imgur.com/NB84XCK.png" height="250">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="250">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://media.giphy.com/media/xT0xesj814PoE4PWwM/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/one.html)
+"UNITE"|"DIVIDE"|"ONE"|"ALL"
+:-----:|:------:|:---:|:---:
+[<img src="https://i.imgur.com/NB84XCK.png" height="250">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="250">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://media.giphy.com/media/xT0xesj814PoE4PWwM/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="https://media.giphy.com/media/3oxHQws4CjtKmcNzsQ/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/all.html)
 
 ## Terms
 - Please upload _ONLY ONE_ homescreen per person.
