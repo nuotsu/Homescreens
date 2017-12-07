@@ -20,7 +20,8 @@
     }
 
     .unite .hs,
-    .divide .hs,
+    .divide_h .hs,
+    .divide_v .hs,
     .one .hs {
         position: absolute;
         left: 50%;
@@ -34,15 +35,20 @@
     }
 
     .unite.iX .hs,
-    .divide.iX .hs {
-        width: calc(100vh * 0.9 * 0.4618) !important;
+    .divide_h.iX .hs,
+    .divide_v.iX {
+        width: calc(100vh * 0.9 * 0.4618);
     }
 
-    .divide {
+    .divide_h {
         height: calc(100vh * 0.9);
     }
-    .divide .hs {
-        transform: translate(-50%, 0);
+
+    .divide_v {
+        width: calc(100vh * 0.9 * 0.5632);
+    }
+    .divide_v .hs {
+        height: calc(100vh * 0.9);
     }
 
     .one .hs img {

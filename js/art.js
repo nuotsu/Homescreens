@@ -21,18 +21,20 @@
                 ></span>
             `)
 
+        var artSize = window.location.href.split('?art=')[1]
         if (window.location.href.indexOf('?art=') > 0 &&
             window.location.href.indexOf('?art=all') <= 0)
-            $(`#homescreens .hs:not([size="${window.location.href.split('?art=')[1]}"])`).remove()
+            $(`#homescreens .hs:not([size="${artSize}"])`).remove()
         if (window.location.href.indexOf('?art=iX') > 00)
             $('#homescreens').addClass('iX')
 
         $('#homescreens .hs').shuffle()
 
-        if($('#homescreens').hasClass('unite') == true) unite()
-        if($('#homescreens').hasClass('divide') == true) divide()
-        if($('#homescreens').hasClass('one') == true) one()
-        if($('#homescreens').hasClass('all') == true) all()
+        if ($('#homescreens').hasClass('unite') == true) unite()
+        if ($('#homescreens').hasClass('divide_h') == true) divide_h()
+        if ($('#homescreens').hasClass('divide_v') == true) divide_v()
+        if ($('#homescreens').hasClass('one') == true) one()
+        if ($('#homescreens').hasClass('all') == true) all()
     })
 
 // Art
@@ -48,19 +50,36 @@
         })
     }
 
-    function divide() {
+    function divide_h() {
         var top = 0;
-        $('.divide .hs').each(function() {
+        $('.divide_h .hs').each(function() {
             var url = $(this).attr('imgur').slice(0, 27)
             var ext = $(this).attr('imgur').slice(27)
             var res = 'l'
             $(this).css({
                 'top': top,
-                'height': $('.divide').height() / $('#homescreens .hs').length,
+                'height': $('.divide_h').height() / $('#homescreens .hs').length,
                 'background-image': `url('${url}${res}${ext}')`,
-                'background-position': `50% -${top}px`
+                'background-position': `50% -${top}px`,
+                'background-repeat': 'no-repeat'
             })
-            top += $('.divide').height() / $('#homescreens .hs').length
+            top += $('.divide_h').height() / $('#homescreens .hs').length
+        })
+    }
+
+    function divide_v() {
+        var left = 0
+        $('.divide_v .hs').each(function() {
+            var url = $(this).attr('imgur').slice(0, 27)
+            var ext = $(this).attr('imgur').slice(27)
+            var res = 'l'
+            $(this).css({
+                'left': left,
+                'width': $('.divide_v').width() / $('#homescreens .hs').length,
+                'background-image': `url('${url}${res}${ext}')`,
+                'background-position': `-${left}px 50%`
+            })
+            left += $('.divide_v').width() / $('#homescreens .hs').length
         })
     }
 
