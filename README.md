@@ -23,7 +23,7 @@ Some may find my installation of the homescreens as not being original or creati
 - `x 2~4` long HDMI cables
 
 ## Sketches
-[<img src="https://i.imgur.com/A8dbxZk.jpg" height="600">](https://i.imgur.com/A8dbxZk.jpg)
+<img src="https://i.imgur.com/A8dbxZk.jpg" height="600">
 
 ## Homescreen Art
 "UNITE"|"DIVIDE"|"ONE"

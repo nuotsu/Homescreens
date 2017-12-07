@@ -98,10 +98,13 @@
     }
     #art select,
     #art a {
-        padding: 4px;
+        display: inline-block;
+        width: 80px;
+        padding: 4px 0;
         border-radius: 4px;
         background: red;
         color: #fff;
+        text-align-last:center;
     }
     #art select:hover,
     #art a:hover {

@@ -18,11 +18,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    /* iPhone X Size Adjustment */
-        .unite.iX .hs,
-        .divide.iX .hs {
-            width: calc(100vh * 0.9 * 0.4618) !important;
-        }
+
     .unite .hs,
     .divide .hs,
     .one .hs {
@@ -36,13 +32,42 @@
         background: center/cover no-repeat;
         text-align: center;
     }
+
+    .unite.iX .hs,
+    .divide.iX .hs {
+        width: calc(100vh * 0.9 * 0.4618) !important;
+    }
+
     .divide {
         height: calc(100vh * 0.9);
     }
     .divide .hs {
         transform: translate(-50%, 0);
     }
+
     .one .hs img {
         max-width: 100%;
         max-height: 100%;
+    }
+
+    .all {
+        width: 100vw;
+        height: 100vh;
+    }
+    .all .hs {
+        display: none;
+    }
+    .all .col {
+        pointer-events: none;
+        float: left;
+        width: 50px;
+        height: 100%;
+        overflow: scroll;
+    }
+    .all .col::-webkit-scrollbar {
+        display: none;
+    }
+    .all .col img {
+        float: left;
+        width: 100%;
     }
