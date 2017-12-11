@@ -125,34 +125,36 @@
         // Scroll columns
             var seconds = 50
 
-            var oddCol = $('#homescreens .col:odd')
-            var oddColHeight = []
-            for (var i = 0; i < oddCol.length; i++) {
-                oddColHeight[i] = 0
-                for (var j = 0; j < oddCol.eq(i).find('img').length; j++)
-                    oddColHeight[i] += oddCol.eq(i).find('img').eq(j).height()
-                oddCol.eq(i)
-                    .animate({
-                        scrollTop: oddColHeight[i]
-                    }, 0)
-                    .animate({
-                        scrollTop: 0
-                    }, 1000 * seconds, 'linear')
-            }
-
-            var evenCol = $('#homescreens .col:even')
-            var evenColHeight = []
-            for (var i = 0; i < evenCol.length; i++) {
-                evenColHeight[i] = 0
-                for (var j = 0; j < evenCol.eq(i).find('img').length; j++)
-                    evenColHeight[i] += evenCol.eq(i).find('img').eq(j).height()
-                evenCol.eq(i).animate({
-                    scrollTop: evenColHeight[i] * 2.55 / 3.5
-                }, 1000 * seconds, 'linear')
-            }
             setTimeout(function() {
-                location.reload()
-            }, 1000 * seconds)
+                var oddCol = $('#homescreens .col:odd')
+                var oddColHeight = []
+                for (var i = 0; i < oddCol.length; i++) {
+                    oddColHeight[i] = 0
+                    for (var j = 0; j < oddCol.eq(i).find('img').length; j++)
+                        oddColHeight[i] += oddCol.eq(i).find('img').eq(j).height()
+                    oddCol.eq(i)
+                        .animate({
+                            scrollTop: oddColHeight[i]
+                        }, 0)
+                        .animate({
+                            scrollTop: 0
+                        }, 1000 * seconds, 'linear')
+                }
+
+                var evenCol = $('#homescreens .col:even')
+                var evenColHeight = []
+                for (var i = 0; i < evenCol.length; i++) {
+                    evenColHeight[i] = 0
+                    for (var j = 0; j < evenCol.eq(i).find('img').length; j++)
+                        evenColHeight[i] += evenCol.eq(i).find('img').eq(j).height()
+                    evenCol.eq(i).animate({
+                        scrollTop: evenColHeight[i] * 2.55 / 3.5
+                    }, 1000 * seconds, 'linear')
+                }
+                setTimeout(function() {
+                    location.reload()
+                }, 1000 * seconds)
+            }, 1000 * 1)
     }
 
 // Shuffle
