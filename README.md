@@ -1,9 +1,13 @@
 # Homescreens
-###### Mitchell Christ &nbsp;|&nbsp; Digital Media Arts, B.F.A.
-
-###### Advisors: Andrew Blanton & Steve Durie
-
 https://nuotsu.github.io/Homescreens
+
+## Info
+
+#### Feb 26 - March 2, 2017 @ Black Gallery, SJSU
+
+Mitchell Christ &nbsp;|&nbsp; Digital Media Arts, B.F.A., SJSU
+
+Advisors: Andrew Blanton & Steve Durie
 
 ![v4](https://i.imgur.com/3oeX2pR.png)
 
@@ -16,10 +20,9 @@ For this installation overall, I want to show that each homescreen tells its own
 Some may find my installation of the homescreens as not being original or creative since I am simply presenting (some of) them untouched and unedited, akin to Duchamp’s Fountain. However, like Duchamp, I believe the art is in the homescreens themselves as every user crafts their own homescreen and chooses to personalize them.
 
 ## Inspired Artists
-- [Joshua Davis](https://joshuadavis.com)
+- [Joshua Davis](https://joshuadavis.com) (SVG artist and creative coder)
 
 ## Equipment
-- Gallery (Belcher, Black)
 - `x 1~3` projectors
 - `x 1~3` Screens for projection
 - `x 4+` displays (iPhones, iPads, or small monitors)
@@ -33,15 +36,14 @@ Some may find my installation of the homescreens as not being original or creati
 ## Homescreen Art
 "UNITE"|"DIVIDE"|"ONE"|"ALL"
 :-----:|:------:|:---:|:---:
-[<img src="https://i.imgur.com/NB84XCK.png" height="250">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="250">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://media.giphy.com/media/xT0xesj814PoE4PWwM/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="https://media.giphy.com/media/3oxHQws4CjtKmcNzsQ/giphy.gif" height="250">](https://nuotsu.github.io/Homescreens/all.html)
-[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/unite.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/unite.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/unite.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/unite.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/unite.html?art=a)|[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/divide.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/divide.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/divide.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/divide.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/divide.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/one.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/one.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/one.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/one.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/one.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/one.html?art=a)|["ALL"](https://nuotsu.github.io/Homescreens/all.html)
+[<img src="https://i.imgur.com/NB84XCK.png" height="200">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="200">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://media.giphy.com/media/xT0xesj814PoE4PWwM/giphy.gif" height="200">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="https://media.giphy.com/media/3oxHQws4CjtKmcNzsQ/giphy.gif" height="200">](https://nuotsu.github.io/Homescreens/all.html)
+[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/unite.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/unite.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/unite.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/unite.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/unite.html?art=a)|[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/divide.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/divide.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/divide.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/divide.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/divide.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/one.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/one.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/one.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/one.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/one.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/one.html?art=a)|[All](https://nuotsu.github.io/Homescreens/all.html)
 
 ## Terms
-- Please upload _ONLY ONE_ homescreen per person.
 - Please upload the first page of the homescreen of your smartphone.
 - Names (optional) will _NOT_ be made public anywhere.
 - Uploaded homescreens will be collected and used for art purposes.
-- Uploaded homescreens will be made visible on this website.
+- Uploaded homescreens will be made visible on this website and in the gallery during exhibition dates.
 - For more information, feel free to contact [@nuotsu](mailto:xzmaru@gmail.com).
 
 ![QR](https://i.imgur.com/nOAm3ay.png)
