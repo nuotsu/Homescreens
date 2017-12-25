@@ -57,7 +57,7 @@
         transform: translate(-50%, 0);
         padding: 10px;
         min-width: 280px;
-        max-height: 90vh;
+        max-height: calc(100vh - 30px);
         overflow: scroll;
         border-radius: 4px 4px 0 0;
         background: rgba(255,255,255, 0.98);
@@ -101,7 +101,8 @@
         display: inline-block;
         width: 85px;
         padding: 4px 0;
-        border-radius: 4px;
+        border-radius: 6px;
+        border: 3px solid rgba(255,255,255, 0.5);
         background: red;
         color: #fff;
         text-align-last:center;

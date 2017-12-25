@@ -16,6 +16,7 @@
             $('#homescreens').prepend(`
                 <span
                     class="hs"
+                    title="${i} (${snapshot.val()[i].name}) (${snapshot.val()[i].size})"
                     imgur="${snapshot.val()[i].homescreen}"
                     size="${snapshot.val()[i].size}"
                 ></span>
