@@ -55,7 +55,15 @@
                         <option value="iX">iPhone X</option>
                         <option value="a">Android</option>
                     </select></td>
-                    <td><a href="all.html">"ALL"</a></td>
+                    <td><select id="all">
+                        <option selected disabled default>"ALL"</option>
+                        <option value="all">All</option>
+                        <option value="iS">iPhone (S)</option>
+                        <option value="iM">iPhone (M)</option>
+                        <option value="iL">iPhone (L)</option>
+                        <option value="iX">iPhone X</option>
+                        <option value="a">Android</option>
+                    </select></td>
                 </tr>
             </table>
         </details>
@@ -132,7 +140,7 @@
                         <input id="terms" type="checkbox">
                         <label for="terms">
                             I have read & accept the
-                            <a href="https://github.com/nuotsu/Homescreens#terms" target="_blank">terms</a>.
+                            <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#terms" target="_blank">terms</a>.
                         </label>
                     </td>
                 </tr>
@@ -142,6 +150,12 @@
                 <tr>
                     <td><input id="submit" type="submit" value="Submit"></td>
                 </tr>
+            </table>
+        </details>
+        <details id="viewHS"><summary>View</summary>
+            <table>
+                <tr><td><a id="viewImgur"></a></td></tr>
+                <tr><td id="viewInfo"></td></tr>
             </table>
         </details>
     </details>

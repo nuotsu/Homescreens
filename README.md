@@ -1,4 +1,4 @@
-# Homescreens
+# _Homescreens_
 https://nuotsu.github.io/Homescreens
 
 ## Info
@@ -21,14 +21,16 @@ Some may find my installation of the homescreens as not being original or creati
 
 ## Inspired Artists
 - [Joshua Davis](https://joshuadavis.com) (SVG artist and creative coder)
+- [Yannick Jacquet](https://www.legoman.net/) (Projection mapping artist)
 
 ## Equipment
-- `x 1~3` projectors
-- `x 1~3` Screens for projection
-- `x 4+` displays (iPhones, iPads, or small monitors)
-    - `4+` for 'Homescreen Art'
-    - `1` for Uploader
-- `x 2~4` long HDMI cables
+- Black Gallery ([floor plan](https://i.imgur.com/RuWN0mN.png))
+- `x 3` projectors
+- `x 3` screens for projections
+- `x 2+` displays (iPhones, iPads, or small monitors)
+    - `1+` for 'Homescreen Art'
+    - `1` for Uploader (computer monitor)
+- `x 2~4` long HDMI cables (8 ~ 10m)
 
 ## Sketches
 <img src="https://i.imgur.com/A8dbxZk.jpg" height="600">

@@ -9,14 +9,14 @@
     };
     firebase.initializeApp(config);
 
-// Load Homescreeens
+// Load Homescreens
     firebase.database().ref().on('value', function(snapshot) {
         $('#homescreens').html('')
         for (var i in snapshot.val())
             $('#homescreens').prepend(`
                 <span
                     class="hs"
-                    title="${i} (${snapshot.val()[i].name}) (${snapshot.val()[i].size})"
+                    info="${i} (${snapshot.val()[i].name}) (${snapshot.val()[i].size})"
                     imgur="${snapshot.val()[i].homescreen}"
                     size="${snapshot.val()[i].size}"
                 ></span>
@@ -29,6 +29,8 @@
                 'background-image': `url('${url}${res}${ext}')`
             })
         })
+
+        viewHS()
 
         return totalHS = snapshot.numChildren()
     })
@@ -103,3 +105,24 @@
             $('#error').fadeIn()
         }
     })
+
+// View Homescreens
+    function viewHS() {
+        $('#homescreens .hs').click(function() {
+            $('#nav, #viewHS').prop('open', true)
+
+            $('#viewHS table').show()
+            $('#viewInfo').html($(this).attr('info'))
+
+            var url = $(this).attr('imgur').slice(0, 27)
+            var ext = $(this).attr('imgur').slice(27)
+            var res = 'm'
+            $('#viewImgur')
+                .attr({
+                    'href': `${url}${ext}`,
+                    'target': '_blank'
+                })
+                .html(`<img src="${url}${res}${ext}">`)
+            console.log('hey');
+        })
+    }
