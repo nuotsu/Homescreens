@@ -1,5 +1,9 @@
 # _Homescreens_
-https://nuotsu.github.io/Homescreens
+[Main Page](https://nuotsu.github.io/Homescreens)
+|
+[Gallery Setup](https://nuotsu.github.io/Homescreens/setup.html)
+|
+[Proposal](#proposal)
 
 ## Info
 

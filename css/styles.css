@@ -29,8 +29,9 @@
         text-decoration: none;
         color: red;
     }
-    a:hover {
-        text-decoration: underline;
+    a:hover,
+    a#setup:hover {
+        text-decoration: underline !important;
     }
     input[type="text"] {
         outline: none;
@@ -97,6 +98,10 @@
         text-align: center;
     }
 
+    td.break {
+        margin: 4px 0;
+    }
+
 /* Art */
     #art {
         text-align: center;
@@ -107,7 +112,7 @@
             appearance: none;
     }
     #art select,
-    #art a {
+    #art a:not(#setup) {
         display: inline-block;
         width: 90px;
         padding: 4px 0;
