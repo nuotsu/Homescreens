@@ -88,6 +88,7 @@
         width: 100%;
         height: 100%;
         border: none;
+            transform: scale(-1, 1);
     }
     .wall.left iframe,
     .wall.right iframe {
@@ -95,6 +96,3 @@
         left: 0;
         top: 0;
     }
-    .wall.right iframe {
-    transform: scale(-1, 1);
-}
