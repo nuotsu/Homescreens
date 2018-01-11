@@ -20,6 +20,10 @@
         padding: 0;
         font-family: 'SFPD';
         font-size: 1em;
+        color: #fff;
+    }
+    body {
+        background: #000;
     }
     a,
     select:not(#size) {
@@ -27,7 +31,7 @@
         outline: none;
         border: none;
         text-decoration: none;
-        color: red;
+        color: green;
     }
     a:hover,
     a#setup:hover {
@@ -44,7 +48,7 @@
     }
     input[type="text"]:focus {
         border: 2px solid rgba(255,255,255, 0.5);
-        background: red;
+        background: green;
         color: #fff;
     }
     input[type="text"]:focus::placeholder {
@@ -71,7 +75,7 @@
         max-height: calc(100vh - 30px);
         overflow: scroll;
         border-radius: 4px 4px 0 0;
-        background: rgba(255,255,255, 0.98);
+        background: rgba(0,0,0, 0.98);
     }
     #nav > summary {
         width: 100%;
@@ -86,7 +90,7 @@
         margin: 10px 0 0 0;
         padding: 4px;
         border-radius: 4px;
-        background: rgba(255,0,0, 0.1);
+        background: rgba(0,255,0, 0.2);
     }
     #nav details table {
         margin: 0 auto;
@@ -112,13 +116,15 @@
             appearance: none;
     }
     #art select,
-    #art a:not(#setup) {
+    #art a:not(#setup),
+    #submit {
+        cursor: pointer;
         display: inline-block;
         width: 90px;
         padding: 4px 0;
         border-radius: 6px;
         border: 2px solid rgba(255,255,255, 0.5);
-        background: red;
+        background: green;
         color: #fff;
         text-align-last:center;
     }
@@ -150,8 +156,8 @@
     }
     #error td {
         font-family: monospace;
-        background: rgba(255,255,255, 0.7);
-        color: red;
+        background: rgba(0,0,0, 0.7);
+        color: green;
     }
 
     #viewHS table {
@@ -160,11 +166,11 @@
     #viewInfo {
         display: table;
         border-radius: 6px;
-        background: rgba(255,255,255, 0.7);
+        background: rgba(0,0,0, 0.7);
         text-align: center;
         font-style: italic;
         font-weight: bold;
-        color: red;
+        color: green;
     }
     #viewImgur {
         display: table;
@@ -188,6 +194,6 @@
         -ms-backdrop-filter: var(--blur);
         -o-backdrop-filter: var(--blur);
         backdrop-filter: var(--blur);
-        background: rgba(255,255,255, 0.9);
+        background: rgba(0,0,0, 0.8);
     }
 }
