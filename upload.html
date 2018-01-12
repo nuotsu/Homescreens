@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Homescreens</title>
+    <!-- <link rel="icon" href="img/favicon.png"> -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" type="text/css" href="css/upload.css">
+</head>
+
+<body>
+    <div id="bg">
+        <div class="blur"></div>
+    </div>
+
+    <main>
+        <div>
+            <h3><a href="index.html">nuotsu.github.io/Homescreens</a></h3>
+            <a href="index.html?upload"><img src="https://i.imgur.com/httX4z5.png"></a>
+            <p>( iOS 11 Camera can read QR! )</p>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    <h1>Upload your <em>Homescreen</em> !</h1>
+                </td>
+            </tr>
+            <tr><td><table id="instr">
+                <tr>
+                    <td>📸</td><td>
+                        Screenshot your smartphone homescreen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>🌐</td><td>
+                        Head over to the link to the left.
+                    </td>
+                </tr>
+                <tr>
+                    <td>👆</td><td>
+                        Click the <img class="camera" src="img/upload.png"> under the <b>▶ Uploader</b> section
+                        and choose your freshly taken screenshot.
+                    </td>
+                </tr>
+                <tr>
+                    <td>📱</td><td>
+                        Select your smartphone size.
+                    </td>
+                </tr>
+                <tr>
+                    <td>🤩</td><td>
+                        Wait for the <img class="camera" src="img/upload.png"> to show your homescreen,
+                        and click <code>Submit</code>!
+                    </td>
+                </tr>
+            </table></td></tr>
+        </table>
+    </main>
+
+    <article id="message">
+        <h1>Thank you for your contribution!</h1>
+        <h3>Enjoy the exhibition!</h3>
+    </article>
+
+    <!-- .js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+        <script>
+            var i = 0
+            $('#instr tr').each(function() {
+                i++
+                $(this).prepend(`<td>${i}.</td>`)
+            })
+        </script>
+</body>
+
+</html>

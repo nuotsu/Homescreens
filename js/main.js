@@ -109,9 +109,9 @@
 // View Homescreens
     function viewHS() {
         $('#homescreens .hs').click(function() {
-            $('#nav, #viewHS').prop('open', true)
+            $('#nav, #section-view').prop('open', true)
 
-            $('#viewHS table').show()
+            $('#section-view table').show()
             $('#viewInfo').html($(this).attr('info'))
 
             var url = $(this).attr('imgur').slice(0, 27)
@@ -124,4 +124,10 @@
                 })
                 .html(`<img src="${url}${res}${ext}">`)
         })
+    }
+
+// URL Parameters
+    if (window.location.href.indexOf('?upload') > 0) {
+        $('#nav, #section-uploader').prop('open', true)
+        $('#section-art, #section-info').prop('open', false)
     }

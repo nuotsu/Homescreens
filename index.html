@@ -13,7 +13,7 @@
 
 <body>
     <details id="nav"><summary>Homescreens</summary>
-        <details open><summary>Art</summary>
+        <details id="section-art" open><summary>Art</summary>
             <table id="art">
                 <tr>
                     <td colspan="2"><select id="unite">
@@ -66,21 +66,21 @@
                     </select></td>
                 </tr>
                 <tr><td class="break"></td></tr>
-                <tr>
-                    <td colspan="2">
-                        <a id="setup" href="setup.html">Gallery Setup</a>
-                    </td>
-                </tr>
             </table>
         </details>
 
-        <details open><summary>Information</summary>
+        <details id="section-info" open><summary>Information</summary>
             <table id="totals">
                 <tr>
                     <td colspan="3">
                         <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#proposal" target="_blank">
                             Proposal (What is this?)
                         </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a id="setup" href="setup.html">Gallery Setup</a>
                     </td>
                 </tr>
                 <tr>
@@ -116,7 +116,7 @@
             </table>
         </details>
 
-        <details><summary>Uploader</summary>
+        <details id="section-uploader"><summary>Uploader</summary>
             <table id="uploader">
                 <tr>
                     <td><input id="name" type="text" placeholder="Name (Optional)"></td>
@@ -156,9 +156,12 @@
                 <tr>
                     <td><input id="submit" type="submit" value="Submit"></td>
                 </tr>
+                <tr>
+                    <td><a href="upload.html">Upload Page for Exhibition</a></td>
+                </tr>
             </table>
         </details>
-        <details id="viewHS"><summary>View</summary>
+        <details id="section-view"><summary>View</summary>
             <table>
                 <tr><td><a id="viewImgur"></a></td></tr>
                 <tr><td id="viewInfo"></td></tr>

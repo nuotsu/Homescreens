@@ -141,6 +141,7 @@
         cursor: pointer;
         width: 50px;
         padding: 25px;
+        border: 2px solid rgba(255,255,255, 0.2);
         border-radius: 3px;
         background:
             green
@@ -160,7 +161,7 @@
         color: green;
     }
 
-    #viewHS table {
+    #section-view table {
         display: none;
     }
     #viewInfo {
