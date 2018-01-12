@@ -11,7 +11,14 @@ Mitchell Christ &nbsp;|&nbsp; _Digital Media Arts, B.F.A., SJSU_
 
 Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 
-![v4](https://i.imgur.com/3oeX2pR.png)
+![v4.7.1.1](https://i.imgur.com/3yOfjzL.jpg)
+
+## Posters
+[<img src="img/posters/poster-1.jpg" style="height: 200px; margin: 0 6px;">]()
+[<img src="img/posters/poster-1a.jpg" style="height: 200px; margin: 0 6px;">]()
+[<img src="img/posters/poster-2.jpg" style="height: 200px; margin: 0 6px;">]()
+[<img src="img/posters/poster-3.jpg" style="height: 200px; margin: 0 6px;">]()
+[<img src="img/posters/poster-4.jpg" style="height: 200px; margin: 0 6px;">]()
 
 ## Proposal
 The homescreen is the page(s) that lists applications and notifications of smartphones and computers. They initially look the same as they display the default apps and wallpapers, but their appearances can and will change as users customize their homescreens through apps, the arrangement of those apps, wallpapers and themes, and more. Because users personalize them, the homescreens are able to present the users’ personality, creativity, and identity—it becomes part of the user. I believe smart devices are an extension of the self, and homescreens are reflections of the self that show personality and individuality.
