@@ -14,11 +14,11 @@ Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 ![v4.7.2](https://i.imgur.com/3yOfjzL.jpg)
 
 ## Posters
-[<img src="img/posters/poster-1.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg) 
-[<img src="img/posters/poster-1a.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg) 
-[<img src="img/posters/poster-2.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg) 
-[<img src="img/posters/poster-3.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg) 
-[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/KL9UYkl.jpg) 
+[<img src="img/posters/poster-1.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg)
+[<img src="img/posters/poster-1a.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg)
+[<img src="img/posters/poster-2.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg)
+[<img src="img/posters/poster-3.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
+[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/KL9UYkl.jpg)
 
 ## Proposal
 The homescreen is the page(s) that lists applications and notifications of smartphones and computers. They initially look the same as they display the default apps and wallpapers, but their appearances can and will change as users customize their homescreens through apps, the arrangement of those apps, wallpapers and themes, and more. Because users personalize them, the homescreens are able to present the users’ personality, creativity, and identity—it becomes part of the user. I believe smart devices are an extension of the self, and homescreens are reflections of the self that show personality and individuality.
@@ -56,7 +56,7 @@ Some may find my installation of the homescreens as not being original or creati
 ## Homescreen Art
 "UNITE"|"DIVIDE"|"ONE"|"ALL"
 :-----:|:------:|:---:|:---:
-[<img src="https://i.imgur.com/NB84XCK.png" height="200">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="200">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://goo.gl/UVAGVE" height="200">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="https://goo.gl/rBgA2j" height="200">](https://nuotsu.github.io/Homescreens/all.html)
+[<img src="https://i.imgur.com/NB84XCK.png" height="200">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="200">](https://nuotsu.github.io/Homescreens/divide.html?art=all)|[<img src="https://goo.gl/UVAGVE" height="200">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="img/hs-2.gif" height="200">](https://nuotsu.github.io/Homescreens/all.html)
 [All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/unite.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/unite.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/unite.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/unite.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/unite.html?art=a)|[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/divide.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/divide.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/divide.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/divide.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/divide.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/one.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/one.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/one.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/one.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/one.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/one.html?art=a)|[All](https://nuotsu.github.io/Homescreens/all.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/all.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/all.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/all.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/all.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/all.html?art=a)
 
 ## Terms
