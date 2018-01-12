@@ -7,7 +7,7 @@
 
 ## Info
 ### Feb 26 - March 2, 2017 @ Black Gallery, SJSU
-Mitchell Christ &nbsp;|&nbsp; <span style="font-weight: 300;">_Digital Media Arts, B.F.A., SJSU_</span>
+Mitchell Christ &nbsp;|&nbsp; _Digital Media Arts, B.F.A., SJSU_
 
 Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 
@@ -22,15 +22,15 @@ For this installation overall, I want to show that each homescreen tells its own
 Some may find my installation of the homescreens as not being original or creative since I am simply presenting (some of) them untouched and unedited, akin to Duchamp’s _Fountain_. However, like Duchamp, I believe the art is in the homescreens themselves as every user crafts their own homescreen and chooses to personalize them.
 
 ## Inspired Artists
-##### [**Joshua Davis**](https://joshuadavis.com)
+[**Joshua Davis**](https://joshuadavis.com)
 - SVG artist and creative coder
 - Creates programs that generate patterns with SVG vectors and shapes
 
-##### [**Yannick Jacquet**](https://www.legoman.net/)
+[**Yannick Jacquet**](https://www.legoman.net/)
 - Projection mapping artist
 - Personal experience working with Yannick during CSU Summer Arts at Fresno State.
 
-##### [**Marcel Duchamp**](https://en.wikipedia.org/wiki/Marcel_Duchamp)
+[**Marcel Duchamp**](https://en.wikipedia.org/wiki/Marcel_Duchamp)
 - Known for 'readymades' (e.g. _Fountain_)
 - Homescreens are also 'readymades'—found visuals; users are the artist and the art is in personalizing and arrangement.
 
@@ -62,11 +62,11 @@ Some may find my installation of the homescreens as not being original or creati
 ![QR](https://i.imgur.com/nOAm3ay.png)
 
 ## Advisor Meetings
-###### _Meeting 1_ :&nbsp; Andrew Blanton &nbsp;|&nbsp; <span style="font-weight: 300;">Mid-November 2017</span>
+###### _Meeting 1_ :&nbsp; Andrew Blanton &nbsp;|&nbsp; Mid-November 2017
 - Introducing project proposal and information.
 - Receiving signature for BFA documents.
 - Asked questions regarding methods of presenting [artwork](#homescreen-art) (large high-quality prints, live projections, displayed on smartphone/tablet screens, etc.)
 
-###### _Meeting 2_ :&nbsp; Steve Durie &nbsp;|&nbsp; <span style="font-weight: 300;">Mid-November 2017</span>
+###### _Meeting 2_ :&nbsp; Steve Durie &nbsp;|&nbsp; Mid-November 2017
 - Introducing project proposal and information.
 - Suggestion of portraying _change over time_ of certain homescreens.
