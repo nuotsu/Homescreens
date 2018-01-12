@@ -123,6 +123,5 @@
                     'target': '_blank'
                 })
                 .html(`<img src="${url}${res}${ext}">`)
-            console.log('hey');
         })
     }
