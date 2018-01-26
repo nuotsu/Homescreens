@@ -29,6 +29,14 @@ For this installation overall, I want to show that each homescreen tells its own
 Some may find my installation of the homescreens as not being original or creative since I am simply presenting (some of) them untouched and unedited, akin to Duchamp’s _Fountain_. However, like Duchamp, I believe the art is in the homescreens themselves as every user crafts their own homescreen and chooses to personalize them.
 
 ## Inspired Artists
+[**Jer Thorp**](http://blog.blprnt.com)
+- Canadian generative software and data artist
+- Known for making data visualizations for NY Times
+
+[**Anthony Antonellis**](https://twitter.com/a_antonellis)
+- New York Net.artist
+- GIF art, AR art
+
 [**Joshua Davis**](https://joshuadavis.com)
 - SVG artist and creative coder
 - Creates programs that generate patterns with SVG vectors and shapes
@@ -78,3 +86,12 @@ Some may find my installation of the homescreens as not being original or creati
 ###### _Meeting 2_ :&nbsp; Steve Durie &nbsp;|&nbsp; Mid-November 2017
 - Introducing project proposal and information.
 - Suggestion of portraying _change over time_ of certain homescreens.
+
+###### _Meeting 3_ :&nbsp; Andrew Blanton &nbsp;|&nbsp; Jan 25, 2018
+- Getting suggestions on how to set up gallery
+    - 1 ~ 2 projectors
+    - 1 long HTML page split into 3 sections
+    - white screens to project on
+- Talked about more artists to draw inspiration from
+    - Jer Thorp, Nick Breeze, Anthony Antonellis
+    - AR Kit, Net.art
