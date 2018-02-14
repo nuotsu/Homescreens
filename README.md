@@ -16,11 +16,11 @@ Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 ![v4.7.2](https://i.imgur.com/3yOfjzL.jpg)
 
 ## Posters
-[<img src="img/posters/poster-1.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg)
-[<img src="img/posters/poster-1a.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg)
-[<img src="img/posters/poster-2.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg)
-[<img src="img/posters/poster-3.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
-[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
+<img src="img/posters/poster-1.jpg" height="200">
+<img src="img/posters/poster-1a.jpg" height="200">
+<img src="img/posters/poster-2.jpg" height="200">
+<img src="img/posters/poster-3.jpg" height="200">
+<img src="img/posters/poster-4.jpg" height="200">
 
 ## Proposal
 The homescreen is the page(s) that lists applications and notifications of smartphones and computers. They initially look the same as they display the default apps and wallpapers, but their appearances can and will change as users customize their homescreens through apps, the arrangement of those apps, wallpapers and themes, and more. Because users personalize them, the homescreens are able to present the users’ personality, creativity, and identity—it becomes part of the user. I believe smart devices are an extension of the self, and homescreens are reflections of the self that show personality and individuality.
@@ -33,25 +33,29 @@ Some may find my installation of the homescreens as not being original or creati
 This installation is partly inspired by my personal experience with _shūji_ (習字) or Japanese calligraphy. Since executing each stroke requires concentration and fluid motion, the drawn characters are said to reflect the personality and confidence of the calligrapher. During the exhibition, along with uploading a homescreen, I want to have participants also include 1 to 3 words that describe their personality or the kind of person they are. A separate projection will show individual homescreens with those attributed words next to it.
 
 ## Inspired Artists
+[**Teppei Koseki**](https://vimeo.com/user5214001)
+
+Teppei Koseki has several videos on Vimeo, but I specifically am drawn to _1981-2001._ Many of the homescreen artworks have strong resemblances. For example, where stripped glimpses of entire images are interweaving together to form the combined piece (_DIVIDE (H)_ and _DIVIDE(H)_). However, in Koseki's piece the strips move across the screen from top to bottom. I had tried to do something in this manner with my work but struggled with making the movement smooth. _ONE_ is another artwork that similar with regards to the individual images being shown for a fraction of a second until another appears.
+
+Teppei's video incorporates sound in his video. It is no music; simply what seems to be the sound of a film roll in action. Despite being simple, the sound does not take away meaning from the piece. Rather, I feel like it strengthens it as the moving and appearing images suggest aesthetic of an old projector going through its film.
+
 [**Jer Thorp**](http://blog.blprnt.com)
-- Canadian generative software and data artist
-- Known for making data visualizations for NY Times
 
-[**Anthony Antonellis**](https://twitter.com/a_antonellis)
-- New York Net.artist
-- GIF art, AR art
-
-[**Joshua Davis**](https://joshuadavis.com)
-- SVG artist and creative coder
-- Creates programs that generate patterns with SVG vectors and shapes
+Canadian generative software and data artist, known for making data visualizations for the NY Times. Ever since I started coding and playing around with JavaScript/jQuery, I have found an interest in using data as means of creating art—basically data visualization. This installation is my first attempt at creating art with a database of information—in this case images of homescreens.
 
 [**Yannick Jacquet**](https://www.legoman.net/)
-- Projection mapping artist
-- Personal experience working with Yannick during CSU Summer Arts at Fresno State.
+
+Projection mapping artist. I had the experience of working with Yannick during CSU Summer Arts at Fresno State installing a projection mapping installation. The theme of the artwork was bioluminescence on Europa, one of Jupiter's moons that may hold life. During the two weeks at Fresno, I was able to have hands-on experience with projection mapping tools such as MadMapper and Syphoner, as well as Premiere and After Effects, and be guided by Yannick.
+
+As for my installation, I will most likely use MadMapper to project my content (HTML pages) onto the gallery walls with the projectors. Ideally, I want to have 3 projectors connect to one computer. One HTML page will be divided into 3 sections—1 section for each wall. Syphoner will send the live HTML page in realtime to MadMapper, where it will make adjustments with alignment of the walls.
 
 [**Marcel Duchamp**](https://en.wikipedia.org/wiki/Marcel_Duchamp)
-- Known for 'readymades' (e.g. _Fountain_)
-- Homescreens are also 'readymades'—found visuals; users are the artist and the art is in personalizing and arrangement.
+
+Duchamp is widely known for 'readymades' (e.g. _Fountain_), or where the artist presents objects that are already made as if they are works of art. I believe homescreens are also ready-mades. I am presenting images of homescreens that are already arranged and personalized by the user of the device. I believe the art is in that process of customizing the apps and wallpapers.
+
+**Other Artists**
+- [Anthony Antonellis](https://twitter.com/a_antonellis)
+- [Joshua Davis](https://joshuadavis.com)
 
 ## Equipment
 - Black Gallery ([floor plan](https://i.imgur.com/fmFTLnP.png))
@@ -63,7 +67,7 @@ This installation is partly inspired by my personal experience with _shūji_ (�
 - `x 2~4` long HDMI cables (8 ~ 10m)
 
 ## Sketches
-<img src="https://i.imgur.com/A8dbxZk.jpg" height="500">
+<img src="https://i.imgur.com/A8dbxZk.jpg" height="200">
 
 ## Homescreen Art
 "UNITE"|"DIVIDE (H)"|"DIVIDE (V)"|"ONE"|"ALL"
@@ -99,3 +103,10 @@ This installation is partly inspired by my personal experience with _shūji_ (�
 - Talked about more artists to draw inspiration from
     - Jer Thorp, Nick Breeze, Anthony Antonellis
     - AR Kit, Net.art
+
+###### _Meeting 4_ :&nbsp; Steve Durie &nbsp;|&nbsp; Feb 1, 2018
+- Need to do comprehensive research on the 4 artists
+    - Teppei Koseki's _1981-2001._
+- Getting information of where to get/borrow projectors
+- Suggesting my idea of asking participants to include 3 words that describe themselves when uploading their homescreen.
+- Possibly add sound or music to the installation
