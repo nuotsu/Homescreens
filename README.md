@@ -110,3 +110,8 @@ Duchamp is widely known for 'readymades' (e.g. _Fountain_), or where the artist 
 - Getting information of where to get/borrow projectors
 - Suggesting my idea of asking participants to include 3 words that describe themselves when uploading their homescreen.
 - Possibly add sound or music to the installation
+
+###### _Meeting 5_ :&nbsp; Steve Durie &nbsp;|&nbsp; Feb 14, 2018
+- How to connect multiple projectors to one laptop
+- suggestion of possibly getting a Mac mini to use as a third computer to connect one projector
+- My personal computer will connect to the remaining two projectors
