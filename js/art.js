@@ -37,6 +37,12 @@
         if ($('#homescreens').hasClass('all') == true) all()
     })
 
+    setTimeout(function() {
+        $('#homescreens').on('DOMNodeInserted', function() {
+            location.reload()
+        })
+    }, 1000 * 3)
+
 // Art
     function unite() {
         $('.unite .hs').each(function() {
@@ -84,10 +90,11 @@
     }
 
     function one() {
+        var seconds = 1
         $('#homescreens .hs').each(function() {
             var url = $(this).attr('imgur').slice(0, 27)
             var ext = $(this).attr('imgur').slice(27)
-            var res = 'l'
+            var res = ''
             $(this)
                 .html(`<img src="${url}${res}${ext}">`)
                 .css('opacity', 0)
@@ -103,7 +110,7 @@
                     'opacity': 1,
                     'z-index': $('#homescreens .hs').length
                 })
-        }, 75)
+        }, 1000 * seconds)
     }
 
     function all() {
@@ -123,7 +130,7 @@
                 col++
             })
         // Scroll columns
-            var seconds = 50
+            var seconds = 75
 
             setTimeout(function() {
                 var oddCol = $('#homescreens .col:odd')

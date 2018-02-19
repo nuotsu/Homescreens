@@ -76,12 +76,12 @@
             translateZ(100px);
     }
     .wall.back {
-    width: 196px;
-    height: 196px;
-    transform:
-        rotateY(-180deg)
-        translateZ(100px);
-}
+        width: 196px;
+        height: 196px;
+        transform:
+            rotateY(-180deg)
+            translateZ(100px);
+    }
 
 /* iframe */
     iframe {

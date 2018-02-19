@@ -34,13 +34,13 @@
         color: green;
     }
     a:hover,
-    a#setup:hover {
+    a#gallery:hover {
         text-decoration: underline !important;
     }
     input[type="text"] {
         outline: none;
-        border: 2px solid rgba(0,0,0, 0.1);
         padding: 4px;
+        border: 2px solid rgba(0,0,0, 0.1);
         border-radius: 6px;
         background: rgba(255,255,255, 0.7);
         text-align: center;
@@ -84,8 +84,22 @@
     summary {
         cursor: pointer;
         outline: none;
+        position: relative;
         font-family: 'SFPD Bold';
     }
+    summary .close {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 14px;
+        filter: invert();
+    }
+    [open] > summary .close {
+        transform: translate(0, -50%) rotate(45deg);
+    }
+
     #nav details {
         margin: 10px 0 0 0;
         padding: 4px;
@@ -116,7 +130,7 @@
             appearance: none;
     }
     #art select,
-    #art a:not(#setup),
+    #art a:not(#gallery),
     #submit {
         cursor: pointer;
         display: inline-block;
@@ -155,10 +169,12 @@
     #error {
         display: none;
     }
+    #upload_msg td,
     #error td {
         font-family: monospace;
         background: rgba(0,0,0, 0.7);
         color: green;
+        max-width: 240px;
     }
 
     #section-view table {

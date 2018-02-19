@@ -16,8 +16,8 @@
         <details id="section-art" open><summary>Art</summary>
             <table id="art">
                 <tr>
-                    <td colspan="2"><select id="unite">
-                        <option selected disabled default>"UNITE"</option>
+                    <td colspan="2"><select id="all">
+                        <option selected disabled default>"ALL"</option>
                         <option value="all">All</option>
                         <option value="iS">iPhone (S)</option>
                         <option value="iM">iPhone (M)</option>
@@ -26,6 +26,27 @@
                         <option value="a">Android</option>
                     </select></td>
                 </tr>
+                <tr>
+                    <td><select id="unite">
+                        <option selected disabled default>"UNITE"</option>
+                        <option value="all">All</option>
+                        <option value="iS">iPhone (S)</option>
+                        <option value="iM">iPhone (M)</option>
+                        <option value="iL">iPhone (L)</option>
+                        <option value="iX">iPhone X</option>
+                        <option value="a">Android</option>
+                    </select></td>
+                    <td><select id="one">
+                        <option selected disabled default>"ONE"</option>
+                        <option value="all">All</option>
+                        <option value="iS">iPhone (S)</option>
+                        <option value="iM">iPhone (M)</option>
+                        <option value="iL">iPhone (L)</option>
+                        <option value="iX">iPhone X</option>
+                        <option value="a">Android</option>
+                    </select></td>
+                </tr>
+                <tr>
                     <td><select id="divide_h">
                         <option selected disabled default>"DIVIDE (H)"</option>
                         <option value="all">All</option>
@@ -37,26 +58,6 @@
                     </select></td>
                     <td><select id="divide_v">
                         <option selected disabled default>"DIVIDE (V)"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><select id="one">
-                        <option selected disabled default>"ONE"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                    <td><select id="all">
-                        <option selected disabled default>"ALL"</option>
                         <option value="all">All</option>
                         <option value="iS">iPhone (S)</option>
                         <option value="iM">iPhone (M)</option>
@@ -80,7 +81,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <a id="setup" href="setup.html">Gallery Setup</a>
+                        <a id="gallery" href="gallery.html">Virtual Gallery</a>
                     </td>
                 </tr>
                 <tr>
@@ -127,6 +128,12 @@
                         <input id="formReader" type="file" accept="image/*">
                     </td>
                 </tr>
+                <tr id="upload_msg">
+                    <td>
+                        * Please wait until your screenshot appears above ↑<br>
+                        (May take up to 15 seconds...)
+                    </td>
+                </tr>
                 <tr>
                     <td><select id="size">
                         <option selected disabled default>Choose size...</option>
@@ -151,13 +158,10 @@
                     </td>
                 </tr>
                 <tr id="error">
-                    <td>Some kind of error... try again ;)</td>
+                    <td>* Error... make sure to choose size and check the terms ;)</td>
                 </tr>
                 <tr>
                     <td><input id="submit" type="submit" value="Submit"></td>
-                </tr>
-                <tr>
-                    <td><a href="upload.html">Upload Page for Exhibition</a></td>
                 </tr>
             </table>
         </details>

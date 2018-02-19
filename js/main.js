@@ -45,15 +45,26 @@
         $('#total_HS').html(totalHS)
     })
 
+// <details> Close Button
+    $('details details summary').each(function() {
+        $(this).append(`<img class="close" src="img/close.png">`)
+    })
+
 // Art
     $('#art select').change(function() {
-        window.location.href = `${$(this).attr('id')}.html?art=${$(this).val()}`
+        window.location.href = `art/${$(this).attr('id')}.html?art=${$(this).val()}`
     })
 
 // Uploader
+    $('#upload_msg').hide()
+
     var newHS
     $('#upload').click(() => $('#formReader').click())
     $('#formReader').change(function() {
+        setTimeout(function() {
+            $('#upload_msg').fadeIn('show')
+        }, 1000)
+
         var formData = new FormData()
             formData.append('image', $('#formReader')[0].files[0])
 
@@ -100,7 +111,7 @@
                 $('#upload').css('background-image', 'none')
                 $('select#size option[disabled]').prop('selected', true)
                 $('#terms').prop('checked', false)
-                $('#error').hide()
+                $('#upload_msg, #error').hide()
         } else {
             $('#error').fadeIn()
         }

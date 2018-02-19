@@ -1,14 +1,17 @@
 # [_Homescreens_](https://nuotsu.github.io/Homescreens)
 [Main Page](https://nuotsu.github.io/Homescreens)
 &nbsp;|&nbsp;
-[Gallery Setup](https://nuotsu.github.io/Homescreens/setup.html)
+[Virtual Gallery](https://nuotsu.github.io/Homescreens/gallery.html)
 &nbsp;|&nbsp;
-[Proposal](#proposal)
+[Signage & Statement](https://docs.google.com/document/d/1IVA39kCor2dROuFFU5Ty9hhNhu9mTsLHlaWBo9mWxi4/edit?usp=sharing)
 &nbsp;|&nbsp;
 [SJSU Art Gallery Page](http://events.ha.sjsu.edu/art/events/mitchell-christ-bfa-digital-media-art-exhibition/)
+&nbsp;|&nbsp;
+[Upload Page for Exhibition](https://nuotsu.github.io/Homescreens/upload.html)
 
 ## Info
-### Feb 26 - March 2, 2017 @ Black Gallery, SJSU
+__Feb 26 - March 2, 2017 @ Black Gallery, SJSU__
+
 Mitchell Christ &nbsp;|&nbsp; _Digital Media Arts, B.F.A., SJSU_
 
 Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
@@ -20,11 +23,12 @@ Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 [<img src="img/posters/poster-1a.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg)
 [<img src="img/posters/poster-2.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg)
 [<img src="img/posters/poster-3.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
-[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
+[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/8hgYlXs.jpg)
+
+## Statement
+The 'homescreen' is the main page of smart devices that nests applications and widgets. Its appearance changes as a user customizes his/her arrangements of apps and applies themes and wallpapers. Because they are customizable, the homescreens reflect the users’ creativity, personality, and individuality. I believe smart devices are an extension of the self, and the homescreens are reflections of the self that each reveal an identity.
 
 ## Proposal
-The homescreen is the page(s) that lists applications and notifications of smartphones and computers. They initially look the same as they display the default apps and wallpapers, but their appearances can and will change as users customize their homescreens through apps, the arrangement of those apps, wallpapers and themes, and more. Because users personalize them, the homescreens are able to present the users’ personality, creativity, and identity—it becomes part of the user. I believe smart devices are an extension of the self, and homescreens are reflections of the self that show personality and individuality.
-
 My BFA show will be an installation of homescreens, displayed in different ways. Ideally, I would reserve a room with at least one large wall across the entrance. This one large wall will be filled, from corner to corner with a projector, the entirety of the collected homescreens in a grid style layout. On the side walls I will hang several frames (3 to 6 per wall, depending on sizes), in which I will either project or display on a digital screen (iPad, iPhone, small monitor, etc.) individual homescreens that changes to another after a certain amount of time. A couple of the frames, however, will not be of individual homescreens, but rather works of art created with the homescreens. One will be of all of the homescreens layered on top of each other, showing that despite all are different they are still the same or have the same basic qualities. Another will switch through different individual homescreens very rapidly, only allowing for viewers to see them for brief moments.
 
 For this installation overall, I want to show that each homescreen tells its own story and that each is of work of art by itself, hence the framing of the individual displays. At the entrance/exit of the room will be a station that displays, along with my statement and other documents, a booth where visitors can contribute to the collective work by uploading their homescreens.
@@ -70,10 +74,10 @@ Duchamp is widely known for 'readymades' (e.g. _Fountain_), or where the artist 
 <img src="https://i.imgur.com/A8dbxZk.jpg" height="200">
 
 ## Homescreen Art
-"UNITE"|"DIVIDE (H)"|"DIVIDE (V)"|"ONE"|"ALL"
+"DIVIDE (H)"|"DIVIDE (V)"|"UNITE"|"ONE"|"ALL"
 :-----:|:----------:|:----------:|:---:|:---:
-[<img src="https://i.imgur.com/NB84XCK.png" height="200">](https://nuotsu.github.io/Homescreens/unite.html?art=all)|[<img src="https://i.imgur.com/X1FRAeU.png" height="200">](https://nuotsu.github.io/Homescreens/divide_h.html?art=all)|[<img src="https://i.imgur.com/D9EZFQw.jpg" height="200">](https://nuotsu.github.io/Homescreens/divide_v.html?art=all)|[<img src="https://goo.gl/UVAGVE" height="200">](https://nuotsu.github.io/Homescreens/one.html)|[<img src="img/hs-2.gif" height="200">](https://nuotsu.github.io/Homescreens/all.html)
-[All](https://nuotsu.github.io/Homescreens/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/unite.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/unite.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/unite.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/unite.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/unite.html?art=a)|[All](https://nuotsu.github.io/Homescreens/divide_h.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/divide_h.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/divide_h.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/divide_h.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/divide_h.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/divide_h.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/divide_v.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/divide_v.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/divide_v.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/divide_v.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/divide_v.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/divide_v.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/one.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/one.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/one.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/one.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/one.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/one.html?art=a)|[All](https://nuotsu.github.io/Homescreens/all.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/all.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/all.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/all.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/all.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/all.html?art=a)
+[<img src="https://i.imgur.com/X1FRAeU.png" height="200">](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=all)|[<img src="https://i.imgur.com/D9EZFQw.jpg" height="200">](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=all)|[<img src="https://i.imgur.com/NB84XCK.png" height="200">](https://nuotsu.github.io/Homescreens/art/unite.html?art=all)|[<img src="https://goo.gl/UVAGVE" height="200">](https://nuotsu.github.io/Homescreens/art/one.html)|[<img src="img/hs-2.gif" height="200">](https://nuotsu.github.io/Homescreens/art/all.html)
+[All](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/art/divide_h.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/art/divide_v.html?art=a)<br>|[All](https://nuotsu.github.io/Homescreens/art/unite.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/art/unite.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/art/unite.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/art/unite.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/art/unite.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/art/unite.html?art=a)|[All](https://nuotsu.github.io/Homescreens/art/one.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/art/one.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/art/one.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/art/one.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/art/one.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/art/one.html?art=a)|[All](https://nuotsu.github.io/Homescreens/art/all.html?art=all)<br>[iPhone (S)](https://nuotsu.github.io/Homescreens/art/all.html?art=iS)<br>[iPhone (M)](https://nuotsu.github.io/Homescreens/art/all.html?art=iM)<br>[iPhone (L)](https://nuotsu.github.io/Homescreens/art/all.html?art=iL)<br>[iPhone X](https://nuotsu.github.io/Homescreens/art/all.html?art=iX)<br>[Android](https://nuotsu.github.io/Homescreens/art/all.html?art=a)
 
 ## Terms
 - Please upload the first page of the homescreen of your smartphone.
@@ -108,10 +112,14 @@ Duchamp is widely known for 'readymades' (e.g. _Fountain_), or where the artist 
 - Need to do comprehensive research on the 4 artists
     - Teppei Koseki's _1981-2001._
 - Getting information of where to get/borrow projectors
-- Suggesting my idea of asking participants to include 3 words that describe themselves when uploading their homescreen.
+- Suggesting my idea of asking participants to include 3 words that describe themselves when uploading their homescreen
 - Possibly add sound or music to the installation
 
 ###### _Meeting 5_ :&nbsp; Steve Durie &nbsp;|&nbsp; Feb 14, 2018
 - How to connect multiple projectors to one laptop
 - suggestion of possibly getting a Mac mini to use as a third computer to connect one projector
 - My personal computer will connect to the remaining two projectors
+
+###### _Meeting 6_ :&nbsp; Andrew Blanton &nbsp;|&nbsp; Feb 15, 2018
+- Testing connection of two projectors to one laptop with Matrox TripleHead2Go
+- Asking to borrow large screen for projections
