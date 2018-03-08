@@ -7,7 +7,7 @@
 &nbsp;|&nbsp;
 [SJSU Art Gallery Page](http://events.ha.sjsu.edu/art/events/mitchell-christ-bfa-digital-media-art-exhibition/)
 &nbsp;|&nbsp;
-[Upload Page for Exhibition](https://nuotsu.github.io/Homescreens/upload.html)
+[Documentation](#documentation)
 
 ## Info
 __Feb 26 - March 2, 2017 @ Black Gallery, SJSU__
@@ -35,6 +35,11 @@ For this installation overall, I want to show that each homescreen tells its own
 Some may find my installation of the homescreens as not being original or creative since I am simply presenting (some of) them untouched and unedited, akin to Duchamp’s _Fountain_. However, like Duchamp, I believe the art is in the homescreens themselves as every user crafts their own homescreen and chooses to personalize them.
 
 This installation is partly inspired by my personal experience with _shūji_ (習字) or Japanese calligraphy. Since executing each stroke requires concentration and fluid motion, the drawn characters are said to reflect the personality and confidence of the calligrapher. During the exhibition, along with uploading a homescreen, I want to have participants also include 1 to 3 words that describe their personality or the kind of person they are. A separate projection will show individual homescreens with those attributed words next to it.
+
+## Documentation
+
+- [Photos](https://nuotsu.github.io/works.html?=hs-doc)
+- [Video](https://youtu.be/oFnIf2n3dIw)
 
 ## Inspired Artists
 [**Teppei Koseki**](https://vimeo.com/user5214001)
