@@ -2,183 +2,105 @@
 <html>
 
 <head>
-    <title>Homescreens</title>
-    <!-- <link rel="icon" href="img/favicon.png"> -->
+    <title></title>
+    <link rel="shortcut icon" href="img/favicon.jpg">
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- .js -->
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script defer src="js/main.js"></script>
 </head>
 
 <body>
-    <details id="nav"><summary>Homescreens</summary>
-        <details id="section-art" open><summary>Art</summary>
-            <table id="art">
-                <tr>
-                    <td colspan="2"><select id="all">
-                        <option selected disabled default>"ALL"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><select id="unite">
-                        <option selected disabled default>"UNITE"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                    <td><select id="one">
-                        <option selected disabled default>"ONE"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td><select id="divide_h">
-                        <option selected disabled default>"DIVIDE (H)"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                    <td><select id="divide_v">
-                        <option selected disabled default>"DIVIDE (V)"</option>
-                        <option value="all">All</option>
-                        <option value="iS">iPhone (S)</option>
-                        <option value="iM">iPhone (M)</option>
-                        <option value="iL">iPhone (L)</option>
-                        <option value="iX">iPhone X</option>
-                        <option value="a">Android</option>
-                    </select></td>
-                </tr>
-                <tr><td class="break"></td></tr>
-            </table>
+    <details lv="1"><summary>Homescreens</summary>
+        <details id="gen-art" lv="2" open><summary>Generated Artwork</summary>
+            <table><tr>
+                <td><select id="art-unite">
+                    <option selected disabled default>"UNITE"</option>
+                </select></td>
+                <td><select id="art-one">
+                    <option selected disabled default>"ONE"</option>
+                </select></td>
+            </tr><tr>
+                <td><select id="art-divide_h">
+                    <option selected disabled default>"DIVIDE (H)"</option>
+                </select></td>
+                <td><select id="art-divide_v">
+                    <option selected disabled default>"DIVIDE (V)"</option>
+                </select></td>
+            </tr><tr>
+                <td colspan="2"><select id="art-all">
+                    <option selected disabled default>"ALL"</option>
+                </select></td>
+            </tr></table>
+            <p class="link">
+                <a href="gallery.html">Virtual Gallery</a>
+            </p>
         </details>
 
-        <details id="section-info" open><summary>Information</summary>
-            <table id="totals">
-                <tr>
-                    <td colspan="3">
-                        <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#proposal" target="_blank">
-                            Proposal (What is this?)
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <a id="gallery" href="gallery.html">Virtual Gallery</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>iPhone (S)</td>
-                    <td>→</td>
-                    <td id="total_iS">0</td>
-                </tr>
-                <tr>
-                    <td>iPhone (M)</td>
-                    <td>→</td>
-                    <td id="total_iM">0</td>
-                </tr>
-                <tr>
-                    <td>iPhone (L)</td>
-                    <td>→</td>
-                    <td id="total_iL">0</td>
-                </tr>
-                <tr>
-                    <td>iPhone X</td>
-                    <td>→</td>
-                    <td id="total_iX">0</td>
-                </tr>
-                <tr>
-                    <td>Android</td>
-                    <td>→</td>
-                    <td id="total_a">0</td>
-                </tr>
-                <tr>
-                    <th>Total</th>
-                    <td>→</td>
-                    <th id="total_HS">0</th>
-                </tr>
-            </table>
+        <details id="info" lv="2" open><summary>Information</summary>
+            <table></table>
+            <p class="link"><a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#proposal" target="_blank">
+                Project Proposal
+            </a></p>
+            <p class="link">
+                &copy;
+                <a href="https://nuotsu.github.io/home" target="_blank">Nuotsu</a>
+                2018
+            </p>
         </details>
 
-        <details id="section-uploader"><summary>Uploader</summary>
-            <table id="uploader">
-                <tr>
-                    <td><input id="name" type="text" placeholder="Name (Optional)"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <img id="upload" src="img/upload.png">
-                        <input id="formReader" type="file" accept="image/*">
-                    </td>
-                </tr>
-                <tr id="upload_msg">
-                    <td>
-                        * Please wait until your screenshot appears above ↑<br>
-                        (May take up to 15 seconds...)
-                    </td>
-                </tr>
-                <tr>
-                    <td><select id="size">
-                        <option selected disabled default>Choose size...</option>
-                        <optgroup label="iPhone">
-                            <option value="iS">5 / 5s / SE</option>
-                            <option value="iM">6 / 6s / 7 / 8</option>
-                            <option value="iL">6+ / 6s+ / 7+ / 8+</option>
-                            <option value="iX">X</option>
-                        </optgroup>
-                        <optgroup label="Android">
-                            <option value="a">Android</option>
-                        </optgroup>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td>
-                        <input id="terms" type="checkbox">
-                        <label for="terms">
-                            I have read & accept the
-                            <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#terms" target="_blank">terms</a>.
-                        </label>
-                    </td>
-                </tr>
-                <tr id="error">
-                    <td>* Error... make sure to choose size and check the terms ;)</td>
-                </tr>
-                <tr>
-                    <td><input id="submit" type="submit" value="Submit"></td>
-                </tr>
-            </table>
+        <details id="uploader" lv="2"><summary>Upload</summary>
+            <table><tr>
+                <td><input id="name" type="text" placeholder="Name (Optional)"></td>
+            </tr><tr>
+                <td id="upload">
+                    <img src="img/upload.png">
+                    <input type="file" accept="image/*">
+                </td>
+            </tr><tr id="notice">
+                <td>
+                    * Please wait until your screenshot appears above ↑<br>
+                    (May take up to 15 seconds...)
+                </td>
+            </tr><tr>
+                <td><select id="size">
+                    <option selected disabled default>Choose Size:</option>
+                    <optgroup label="iPhone"></optgroup>
+                    <optgroup label="non-iPhone"></optgroup>
+                </select></td>
+            </tr><tr>
+                <td>
+                    <input id="terms" type="checkbox">
+                    <label for="terms">
+                        I have read & accept the
+                        <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#terms" target="_blank">terms</a>.
+                    </label>
+                </td>
+            </tr><tr id="error">
+                <td>
+                    * Error... make sure to choose size and check the terms ;)
+                </td>
+            </tr><tr>
+                <td><button id="submit">Submit</button></td>
+            </tr></table>
         </details>
-        <details id="section-view"><summary>View</summary>
-            <table>
-                <tr><td><a id="viewImgur"></a></td></tr>
-                <tr><td id="viewInfo"></td></tr>
-            </table>
+
+        <details id="preview" lv="2"><summary>Preview</summary>
+            <table><tr>
+                <td><a id="prev_img"><img></a></td>
+            </tr><tr>
+                <td id="prev_info"></td>
+            </tr></table>
         </details>
     </details>
 
-    <main id="homescreens"></main>
-
-    <!-- .js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-        <script src="js/main.js"></script>
+    <main id="hs-bg"></main>
 </body>
 
 </html>

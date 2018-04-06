@@ -7,197 +7,210 @@
         font-family: 'SFPD Bold';
         src: url('../fonts/SF-Pro-Display-Bold.otf');
     }
+    @font-face {
+        font-family: 'SF Mono';
+        src: url('../fonts/SFMono.otf');
+    }
+    @font-face {
+        font-family: 'SF Mono Bold';
+        src: url('../fonts/SFMono-Bold.otf.otf');
+    }
 
 /* Variables */
     :root {
         --blur: blur(10px) saturate(1.8);
-        --transition: 0.2s ease-in-out;
+
+        --bg: rgba(0,0,0, 0.7);
+        --borad: 4px;
     }
 
 /* Common */
     * {
         margin: 0;
         padding: 0;
-        font-family: 'SFPD';
-        font-size: 1em;
         color: #fff;
     }
     body {
         background: #000;
+        font-family: 'SFPD';
     }
-    a,
-    select:not(#size) {
+
+/* <details> */
+    details > * {
+        padding: 4px;
+        text-align: center;
+    }
+    details summary {
         cursor: pointer;
         outline: none;
-        border: none;
-        text-decoration: none;
-        color: green;
+        text-align: left;
+        font-family: 'SFPD Bold';
     }
-    a:hover,
-    a#gallery:hover {
-        text-decoration: underline !important;
+    summary::-webkit-details-marker {
+        vertical-align: middle;
+        color: rgba(0,0,0, 0);
+        background:
+            url('../img/logo_none.svg')
+            center/cover no-repeat;
     }
-    input[type="text"] {
-        outline: none;
-        padding: 4px;
-        border: 2px solid rgba(0,0,0, 0.1);
-        border-radius: 6px;
-        background: rgba(255,255,255, 0.7);
-        text-align: center;
-        transition: var(--transition);
+    details[lv="1"] > summary::-webkit-details-marker {
+        width: 24px;
+        height: 24px;
     }
-    input[type="text"]:focus {
-        border: 2px solid rgba(255,255,255, 0.2);
-        background: green;
-        color: #fff;
+    details[lv="2"] > summary::-webkit-details-marker {
+        width: 18px;
+        height: 18px;
     }
-    input[type="text"]:focus::placeholder {
-        color: rgba(255,255,255, 0.2);
+    details[open] > summary::-webkit-details-marker {
+        background-image: url('../img/logo.svg');
     }
 
-/* Homescreens */
-    #homescreens .hs {
-        display: inline-block;
-        float: left;
-        width: calc(100vw / 15);
-        height: calc(100vw / 15);
-        background: center/cover no-repeat;
-    }
-
-/* Navigation */
-    #nav {
+    details[lv="1"] {
         position: fixed;
         left: 50%;
         bottom: 0;
         transform: translate(-50%, 0);
-        padding: 10px;
-        min-width: 280px;
-        max-height: calc(100vh - 30px);
+        min-width: 300px;
+        max-height: calc(100vh - 10px);
         overflow: scroll;
-        border-radius: 4px 4px 0 0;
-        background: rgba(0,0,0, 0.98);
+        -webkit-overflow-scrolling: touch;
+        border-radius: 6px 6px 0 0;
+        background: #000;
     }
-    #nav > summary {
-        width: 100%;
-        font-size: 24px;
-    }
-    summary {
-        cursor: pointer;
-        outline: none;
-        position: relative;
-        font-family: 'SFPD Bold';
-    }
-    summary .close {
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0, -50%);
-        width: 14px;
-        filter: invert();
-    }
-    [open] > summary .close {
-        transform: translate(0, -50%) rotate(45deg);
+    details[lv="2"] {
+        margin: 4px 0;
+        background: rgba(255,255,255, 0.3);
     }
 
-    #nav details {
-        margin: 10px 0 0 0;
-        padding: 4px;
-        border-radius: 4px;
-        background: rgba(0,255,0, 0.12);
+    details[lv="1"] > summary {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 10px;
+        font-size: 24px;
+        background: #000;
     }
-    #nav details table {
+    details[lv="2"] > summary {
+        font-size: 18px;
+    }
+
+    details table {
+        margin: 0 auto;
+        text-align: center;
+    }
+    details .link {
+        margin: 10px auto;
+    }
+
+    #info table tr td:nth-child(2) {
+        padding: 0 10px;
+    }
+    #info table tr td:nth-child(3) {
+        font: italic 16px 'SF Mono';
+    }
+
+    #uploader #upload img {
+        cursor: pointer;
+        padding: 40px;
+        width: 60px;
+        background:
+            var(--bg)
+            center/cover no-repeat;
+        border-radius: var(--borad);
+    }
+    #uploader #upload input,
+    #uploader #notice,
+    #uploader #error {
+        display: none;
+        font: 10px 'SF Mono';
+        font-style: italic;
+    }
+    #uploader #error *,
+    #uploader #notice * {
+        color: rgba(255,255,255, 0.7);
+    }
+
+    #preview table {
+        display: none;
+    }
+    #preview #prev_img img {
+        max-height: 200px;
+        border-radius: var(--borad);
+    }
+    #preview #prev_info i {
+        font: italic 16px 'SF Mono';
+    }
+    #preview #prev_info > * {
+        display: table;
         margin: 0 auto;
     }
-    #nav details table td {
+
+/* Inputs */
+    table {
+        border-collapse: collapse;
+    }
+    table td {
         padding: 2px;
     }
-    #totals {
-        text-align: center;
-    }
-
-    td.break {
-        margin: 4px 0;
-    }
-
-/* Art */
-    #art {
-        text-align: center;
-    }
-    #art select {
+    #gen-art select,
+    #uploader #name,
+    #uploader #size,
+    #uploader #submit {
         -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-    }
-    #art select,
-    #art a:not(#gallery),
-    #submit {
-        cursor: pointer;
-        display: inline-block;
-        width: 90px;
-        padding: 4px 0;
-        border-radius: 6px;
-        border: 2px solid rgba(255,255,255, 0.2);
-        background: green;
-        color: #fff;
-        text-align-last:center;
-    }
-    #art select:hover,
-    #art a:hover {
-        text-decoration: none;
-    }
-
-/* Uploader */
-    #uploader {
-        text-align: center;
-    }
-    #upload {
-        cursor: pointer;
-        width: 50px;
-        padding: 25px;
-        border: 2px solid rgba(255,255,255, 0.2);
-        border-radius: 3px;
-        background:
-            green
-            center/cover no-repeat;
-        box-shadow: 0 3px 10px rgba(0,0,0, 0.3);
-    }
-    #formReader {
-        display: none;
-    }
-
-    #error {
-        display: none;
-    }
-    #upload_msg td,
-    #error td {
-        font-family: monospace;
-        background: rgba(0,0,0, 0.7);
-        color: green;
-        max-width: 240px;
-    }
-
-    #section-view table {
-        display: none;
-    }
-    #viewInfo {
-        display: table;
-        border-radius: 6px;
-        background: rgba(0,0,0, 0.7);
-        text-align: center;
-        font-style: italic;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        padding: 4px;
+        background: var(--bg);
+        border-radius: var(--borad);
+        border: none;
+        font-size: 12px;
         font-weight: bold;
-        color: green;
+        text-align: center;
     }
-    #viewImgur {
-        display: table;
-        margin: 0 auto;
+    details select {
+        cursor: pointer;
     }
-    #viewImgur img {
-        height: 200px;
-        border-radius: 3px;
-        box-shadow: 0 3px 10px rgba(0,0,0, 0.3);
+    #gen-art select {
+        width: 100px;
     }
+    #uploader #name {
+        width: 132px;
+    }
+    #uploader #size {
+        width: 140px;
+    }
+
+/* Homescreen BG */
+    hs-img {
+        display: inline-block;
+        float: left;
+        width: calc(100vw / 16);
+        height: calc(100vw / 16);
+        background: center/cover no-repeat;
+    }
+
+@media screen and (min-width: 1000px) {
+    details[lv="1"][open] {
+        width: 90vw;
+    }
+    details[lv="2"] {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% / 4 - 10.5px);
+    }
+
+    @supports
+        (-webkit-backdrop-filter: var(--blur)) or
+        (-moz-backdrop-filter: var(--blur)) or
+        (-ms-backdrop-filter: var(--blur)) or
+        (-o-backdrop-filter: var(--blur)) or
+        (backdrop-filter: var(--blur)) {
+        details[lv="1"] > summary {
+            background: none;
+        }
+    }
+}
 
 @supports
     (-webkit-backdrop-filter: var(--blur)) or
@@ -205,7 +218,7 @@
     (-ms-backdrop-filter: var(--blur)) or
     (-o-backdrop-filter: var(--blur)) or
     (backdrop-filter: var(--blur)) {
-    #nav {
+    details[lv="1"] {
         -webkit-backdrop-filter: var(--blur);
         -moz-backdrop-filter: var(--blur);
         -ms-backdrop-filter: var(--blur);
