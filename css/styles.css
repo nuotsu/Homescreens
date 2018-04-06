@@ -71,9 +71,9 @@
         bottom: 0;
         transform: translate(-50%, 0);
         min-width: 300px;
-        max-height: calc(100vh - 10px);
+        max-height: calc(100vh - 35px);
         overflow: scroll;
-        -webkit-overflow-scrolling: touch;
+        /* -webkit-overflow-scrolling: touch; */
         border-radius: 6px 6px 0 0;
         background: #000;
     }
