@@ -42,17 +42,13 @@
 
 // DeviceOrientation / 3D
     window.addEventListener('deviceorientation', function(e) {
-        // X --> e.beta
-        // Y --> e.gamma
-        // Z --> e.alpha
-
-        $('#x code').html(Math.round(e.beta))
-        $('#y code').html(Math.round(e.gamma))
-        $('#z code').html(Math.round(e.alpha))
+        $('#x code').html(Math.round(e.beta))   // X --> e.beta
+        $('#y code').html(Math.round(e.gamma))  // Y --> e.gamma
+        $('#z code').html(Math.round(e.alpha))  // Z --> e.alpha
 
         document.getElementById('hs-3d-img').style.webkitTransform =
         document.getElementById('hs-3d-img').style.transform =
-            'rotateX(' + e.beta + 'deg) ' +
-            'rotateY(' + e.gamma + 'deg) ' +
-            'rotateZ(' + e.alpha + 'deg)';
+            `rotateX(${e.beta}deg) ` +
+            `rotateY(${e.gamma}deg) ` +
+            `rotateZ(${e.alpha}deg)`;
     })
