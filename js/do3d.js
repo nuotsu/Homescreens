@@ -52,7 +52,7 @@
 
         document.getElementById('#hs-3d').style.webkitTransform =
         document.getElementById('#hs-3d').style.transform =
-            `rotateX(${e.beta + 45}deg)
-            rotateY(${e.gamma}deg)
-            rotateZ(${e.alpha}deg)`;
+            'rotateX(' + e.beta + 45 + 'deg) ' +
+            'rotateY(' + e.gamma + 'deg) ' +
+            'rotateZ(' + e.alpha + 'deg)';
     })
