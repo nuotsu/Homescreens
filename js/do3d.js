@@ -45,6 +45,10 @@
             // Y --> e.gamma
             // Z --> e.alpha
 
+            $('#x code').html(e.beta)
+            $('#y code').html(e.gamma)
+            $('#z code').html(e.alpha)
+
             if (e.beta != null || e.gamma != null || e.alpha != null) {
                 $('#debugger').html('do3d success!')
                 $('#hs-3d img').css({
