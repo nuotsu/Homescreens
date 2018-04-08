@@ -1,0 +1,29 @@
+/* Fonts */
+
+/* Variables */
+    :root {
+
+    }
+
+/* Common */
+    * {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+    body {
+        background: #000;
+    }
+
+/* HS 3D */
+    #hs-3d {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #hs-3d img {
+        transform-style: preserve-3d;
+        max-width: 100vw;
+        max-height: calc(100vh * 0.9);
+    }
