@@ -46,13 +46,13 @@
         // Y --> e.gamma
         // Z --> e.alpha
 
-        $('#x code').html(Math.round(e.beta + 45))
+        $('#x code').html(Math.round(e.beta))
         $('#y code').html(Math.round(e.gamma))
         $('#z code').html(Math.round(e.alpha))
 
-        document.getElementById('#hs-3d').style.webkitTransform =
-        document.getElementById('#hs-3d').style.transform =
-            'rotateX(' + e.beta + 45 + 'deg) ' +
+        document.getElementById('hs-3d-img').style.webkitTransform =
+        document.getElementById('hs-3d-img').style.transform =
+            'rotateX(' + e.beta + 'deg) ' +
             'rotateY(' + e.gamma + 'deg) ' +
             'rotateZ(' + e.alpha + 'deg)';
     })
