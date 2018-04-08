@@ -69,6 +69,7 @@
         position: fixed;
         left: 50%;
         bottom: 0;
+        z-index: 1;
         transform: translate(-50%, 0);
         min-width: 300px;
         max-height: calc(100vh - 45px);
@@ -152,10 +153,12 @@
     table td {
         padding: 2px;
     }
-    #gen-art select,
+    select,
+    button,
     #uploader #name,
     #uploader #size,
-    #uploader #submit {
+    #uploader #submit,
+    #hs3d-art a {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -171,7 +174,8 @@
     details select {
         cursor: pointer;
     }
-    #gen-art select {
+    #gen-art select,
+    #hs-list {
         width: 100px;
     }
     #uploader #name {
@@ -179,6 +183,9 @@
     }
     #uploader #size {
         width: 140px;
+    }
+    button:active {
+        opacity: 0.8;
     }
 
 /* Homescreen BG */

@@ -9,7 +9,7 @@
     ]
 
 // Generated Artwork
-    $('#gen-art table td select').each(function() {
+    $('#gen-art select:not(#art-do3d)').each(function() {
         for (i in hs_types)
             $(this).append(`<option value="${hs_types[i][0]}">${hs_types[i][1]}</option>`)
     })
