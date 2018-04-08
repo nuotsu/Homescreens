@@ -22,7 +22,7 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    #hs-3d img {
+    #hs-3d-img {
         position: relative;
         transform-style: preserve-3d;
         max-width: 90vw;
