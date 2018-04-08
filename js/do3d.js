@@ -29,6 +29,8 @@
         })
 
         // Change #hs-3d
+            randHS = Math.floor(Math.random() * $('#hs-list option').length)
+            $('#hs-list option').eq(randHS).prop('selected', true)
             changeHS3D()
             $('#hs-list').change(changeHS3D)
             function changeHS3D() {
@@ -39,7 +41,6 @@
     })
 
 // DeviceOrientation / 3D
-    //if (('ondeviceorientation' in window))
     window.addEventListener('deviceorientation', function(e) {
         // X --> e.beta
         // Y --> e.gamma
@@ -48,17 +49,15 @@
         $('#x code').html(Math.round(e.beta))
         $('#y code').html(Math.round(e.gamma))
         $('#z code').html(Math.round(e.alpha))
-        $('#css').html($('#hs-3d img').css('transform'))
 
-        console.log(Math.round(e.beta), Math.round(e.gamma), Math.round(e.alpha));
-
-        //if (e.beta != null || e.gamma != null || e.alpha != null) {
-            $('#debugger').html('do3d success!')
-            $('#hs-3d img').css({
-                'transform':
-                    `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
-                    translateZ(75px)`
-            })
-        //} else
-            //$('#debugger').html('do3d failed!')
+        document.getElementById('hs-3d-img').style.webkitTransform =
+        document.getElementById('hs-3d-img').style.transform =
+            'rotateX(' + e.beta + 'deg) ' +
+            'rotateY(' + e.gamma + 'deg) ' +
+            'rotateZ(' + e.alpha + 'deg)';
+        // $('#hs-3d img').css({
+        //     'transform':
+        //         `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
+        //         translateZ(75px)`
+        // })
     })
