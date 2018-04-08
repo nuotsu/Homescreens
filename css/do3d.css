@@ -21,11 +21,18 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        transform-style: preserve-3d;
     }
     #hs-3d img {
-        position: relative;
-        transform-style: preserve-3d;
+        position: absolute;
+        text-align: center;
         max-width: 90vw;
-        /* max-height: calc(100vh * 0.9); */
         max-height: calc(100vh * 0.7);
+    }
+    #hs-3d #hs3d-left { transform: rotateY(-90deg); }
+    #hs-3d #hs3d-right { transform: rotateY(90deg); }
+
+/* Coords */
+    #coords tr td:nth-child(2) {
+        text-align: right;
     }

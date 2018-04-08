@@ -34,8 +34,14 @@
             changeHS3D()
             $('#hs-list').change(changeHS3D)
             function changeHS3D() {
-                $('#hs-3d img').attr({
+                $('#hs3d-middle').attr({
                     'src': $('#hs-list').val()
+                })
+                $('#hs3d-left').attr({
+                    'src': $('#hs-list option:checked').prev().attr('value')
+                })
+                $('#hs3d-right').attr({
+                    'src': $('#hs-list option:checked').next().attr('value')
                 })
             }
     })
@@ -52,12 +58,7 @@
 
         document.getElementById('hs-3d-img').style.webkitTransform =
         document.getElementById('hs-3d-img').style.transform =
-            'rotateX(' + e.beta + 'deg) ' +
-            'rotateY(' + e.gamma + 'deg) ' +
-            'rotateZ(' + e.alpha + 'deg)';
-        // $('#hs-3d img').css({
-        //     'transform':
-        //         `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
-        //         translateZ(75px)`
-        // })
+            `rotateX(${e.beta + 45}deg)
+            rotateY(${e.gamma}deg)
+            rotateZ(${e.alpha}deg)`;
     })
