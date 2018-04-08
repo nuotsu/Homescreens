@@ -23,7 +23,9 @@
         transform: translate(-50%, -50%);
     }
     #hs-3d img {
+        position: relative;
         transform-style: preserve-3d;
-        max-width: 100vw;
-        max-height: calc(100vh * 0.9);
+        max-width: 90vw;
+        /* max-height: calc(100vh * 0.9); */
+        max-height: calc(100vh * 0.7);
     }
