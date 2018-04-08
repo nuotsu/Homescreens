@@ -39,23 +39,25 @@
     })
 
 // DeviceOrientation / 3D
-    if (('ondeviceorientation' in window))
-        window.addEventListener('deviceorientation', function(e) {
-            // X --> e.beta
-            // Y --> e.gamma
-            // Z --> e.alpha
+    //if (('ondeviceorientation' in window))
+    window.addEventListener('deviceorientation', function(e) {
+        // X --> e.beta
+        // Y --> e.gamma
+        // Z --> e.alpha
 
-            $('#x code').html(e.beta)
-            $('#y code').html(e.gamma)
-            $('#z code').html(e.alpha)
+        $('#x code').html(Math.round(e.beta))
+        $('#y code').html(Math.round(e.gamma))
+        $('#z code').html(Math.round(e.alpha))
 
-            if (e.beta != null || e.gamma != null || e.alpha != null) {
-                $('#debugger').html('do3d success!')
-                $('#hs-3d img').css({
-                    'transform':
-                        `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
-                        translateZ(75px)`
-                })
-            } else
-                $('#debugger').html('do3d failed!')
-        })
+        console.log(Math.round(e.beta), Math.round(e.gamma), Math.round(e.alpha));
+
+        //if (e.beta != null || e.gamma != null || e.alpha != null) {
+            $('#debugger').html('do3d success!')
+            $('#hs-3d img').css({
+                'transform':
+                    `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
+                    translateZ(75px)`
+            })
+        //} else
+            //$('#debugger').html('do3d failed!')
+    })
