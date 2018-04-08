@@ -49,11 +49,8 @@
                 $('#debugger').html('do3d success!')
                 $('#hs-3d img').css({
                     'transform':
-                        `rotate(
-                            ${e.beta}deg,
-                            ${e.gamma}deg,
-                            ${e.alpha}deg
-                        )`
+                        `rotate(${e.beta}deg, ${e.gamma}deg, ${e.alpha}deg)
+                        translateZ(75px)`
                 })
             } else
                 $('#debugger').html('do3d failed!')
