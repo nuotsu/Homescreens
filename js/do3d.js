@@ -52,12 +52,16 @@
         // Y --> e.gamma
         // Z --> e.alpha
 
-        $('#x code').html(Math.round(e.beta))
+        $('#x code').html(Math.round(e.beta + 45))
         $('#y code').html(Math.round(e.gamma))
         $('#z code').html(Math.round(e.alpha))
 
-        document.getElementById('hs-3d-img').style.webkitTransform =
-        document.getElementById('hs-3d-img').style.transform =
+        document.getElementById('hs3d-middle').style.webkitTransform =
+        document.getElementById('hs3d-middle').style.transform =
+        document.getElementById('hs3d-left').style.webkitTransform =
+        document.getElementById('hs3d-left').style.transform =
+        document.getElementById('hs3d-right').style.webkitTransform =
+        document.getElementById('hs3d-right').style.transform =
             `rotateX(${e.beta + 45}deg)
             rotateY(${e.gamma}deg)
             rotateZ(${e.alpha}deg)`;
