@@ -48,6 +48,7 @@
         $('#x code').html(Math.round(e.beta))
         $('#y code').html(Math.round(e.gamma))
         $('#z code').html(Math.round(e.alpha))
+        $('#css').html($('#hs-3d img').css('transform'))
 
         console.log(Math.round(e.beta), Math.round(e.gamma), Math.round(e.alpha));
 
