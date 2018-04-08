@@ -46,20 +46,9 @@
         $('#y code').html(Math.round(e.gamma))  // Y --> e.gamma
         $('#z code').html(Math.round(e.alpha))  // Z --> e.alpha
 
-        $('#hs-3d-img').css({
-            '-webkit-transform':
-                `rotateX(${e.beta}deg) ` +
-                `rotateY(${e.gamma}deg) ` +
-                `rotateZ(${e.alpha}deg)`,
-            'transform':
-                `rotateX(${e.beta}deg) ` +
-                `rotateY(${e.gamma}deg) ` +
-                `rotateZ(${e.alpha}deg)`
-        })
-
-        // document.getElementById('hs-3d-img').style.webkitTransform =
-        // document.getElementById('hs-3d-img').style.transform =
-        //     `rotateX(${e.beta}deg) ` +
-        //     `rotateY(${e.gamma}deg) ` +
-        //     `rotateZ(${e.alpha}deg)`;
+        document.getElementById('hs-3d').style.webkitTransform =
+        document.getElementById('hs-3d').style.transform =
+            `rotateX(${e.beta}deg) ` +
+            `rotateY(${e.gamma}deg) ` +
+            `rotateZ(${e.alpha}deg)`;
     })
