@@ -46,8 +46,8 @@
         $('#y code').html(Math.round(e.gamma))  // Y --> e.gamma
         $('#z code').html(Math.round(e.alpha))  // Z --> e.alpha
 
-        document.getElementById('hs-3d').style.webkitTransform =
-        document.getElementById('hs-3d').style.transform =
+        document.getElementById('hs-3d-img').style.webkitTransform =
+        document.getElementById('hs-3d-img').style.transform =
             `rotateX(${e.beta}deg) ` +
             `rotateY(${e.gamma}deg) ` +
             `rotateZ(${e.alpha}deg)`;
