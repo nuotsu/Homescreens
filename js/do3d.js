@@ -37,12 +37,6 @@
                 $('#hs3d-middle').attr({
                     'src': $('#hs-list').val()
                 })
-                $('#hs3d-left').attr({
-                    'src': $('#hs-list option:checked').prev().attr('value')
-                })
-                $('#hs3d-right').attr({
-                    'src': $('#hs-list option:checked').next().attr('value')
-                })
             }
     })
 
@@ -58,10 +52,6 @@
 
         document.getElementById('hs3d-middle').style.webkitTransform =
         document.getElementById('hs3d-middle').style.transform =
-        document.getElementById('hs3d-left').style.webkitTransform =
-        document.getElementById('hs3d-left').style.transform =
-        document.getElementById('hs3d-right').style.webkitTransform =
-        document.getElementById('hs3d-right').style.transform =
             `rotateX(${e.beta + 45}deg)
             rotateY(${e.gamma}deg)
             rotateZ(${e.alpha}deg)`;

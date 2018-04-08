@@ -29,8 +29,6 @@
         max-width: 90vw;
         max-height: calc(100vh * 0.7);
     }
-    #hs-3d #hs3d-left { transform: rotateY(-90deg); }
-    #hs-3d #hs3d-right { transform: rotateY(90deg); }
 
 /* Coords */
     #coords tr td:nth-child(2) {
