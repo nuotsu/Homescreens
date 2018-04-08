@@ -24,8 +24,6 @@
         transform-style: preserve-3d;
     }
     #hs-3d img {
-        position: absolute;
-        text-align: center;
         max-width: 90vw;
         max-height: calc(100vh * 0.7);
     }

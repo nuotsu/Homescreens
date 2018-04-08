@@ -34,7 +34,7 @@
             changeHS3D()
             $('#hs-list').change(changeHS3D)
             function changeHS3D() {
-                $('#hs3d-middle').attr({
+                $('#hs-3d img').attr({
                     'src': $('#hs-list').val()
                 })
             }
@@ -50,8 +50,8 @@
         $('#y code').html(Math.round(e.gamma))
         $('#z code').html(Math.round(e.alpha))
 
-        document.getElementById('hs3d-middle').style.webkitTransform =
-        document.getElementById('hs3d-middle').style.transform =
+        document.getElementById('#hs-3d').style.webkitTransform =
+        document.getElementById('#hs-3d').style.transform =
             `rotateX(${e.beta + 45}deg)
             rotateY(${e.gamma}deg)
             rotateZ(${e.alpha}deg)`;
