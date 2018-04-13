@@ -175,8 +175,6 @@
         $('details[lv="2"]').each(function() {
             if ($(this).css('display') == 'inline-block')
                 $(this).prop('open', true)
-            else
-                $('#uploader, #preview').prop('open', false)
         })
     }
 

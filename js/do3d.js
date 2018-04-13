@@ -78,9 +78,9 @@
 // DeviceOrientation / 3D
     xAdjust = 35
     window.addEventListener('deviceorientation', function(e) {
-        $('#x code').html(`${Math.round(e.beta-xAdjust)}°`)   // X --> e.beta
-        $('#y code').html(`${Math.round(e.gamma)}°`)  // Y --> e.gamma
-        $('#z code').html(`${Math.round(e.alpha)}°`)  // Z --> e.alpha
+        $('#x code').html(`${Math.round(e.beta-xAdjust)}°`)     // X --> e.beta
+        $('#y code').html(`${Math.round(e.gamma)}°`)            // Y --> e.gamma
+        $('#z code').html(`${Math.round(e.alpha)}°`)            // Z --> e.alpha
 
         document.getElementById('hs-3d-box').style.webkitTransform =
         document.getElementById('hs-3d-box').style.transform =
