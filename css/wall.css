@@ -29,6 +29,16 @@
     }
     .left { grid-area: left; }
     .right { grid-area: right; }
+    .center { grid-area: center; }
+
+    body#choice {
+        display: grid;
+        grid-template-areas:
+            'left center right';
+        grid-template-columns:
+            28% 44% 28%;
+        grid-template-rows: 1fr;
+    }
 
 /* Walls */
     article {
@@ -42,4 +52,24 @@
         width: 100%;
         height: 100%;
         border: none;
+    }
+
+/* CHOICE */
+    #choice article.left iframe,
+    #choice article.right iframe {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(.7)
+    }
+    #choice .dv {
+        animation: appear 30s ease-out infinite
+    }
+    @keyframes appear {
+        0% { opacity: 1; }
+        25% { opacity: 1; }
+        27% {opacity: 0; }
+        75% { opacity: 0; }
+        77% { opacity: 1; }
+        100% { opacity: 1; }
     }
