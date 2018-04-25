@@ -72,6 +72,17 @@
             rotateY(90deg);
     }
 
+/* Homescreen World */
+    #hs-3d-box span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: inline-block;
+        background: center/contain no-repeat;
+    }
+
 @media screen and (min-width: 1000px) {
     #do3d[open]  {
         width: 50vw;
