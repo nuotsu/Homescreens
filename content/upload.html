@@ -1,0 +1,112 @@
+<h1>Upload</h1>
+
+<table>
+    <tr>
+        <td><input id="name" type="text" placeholder="Name (Optional)"></td>
+    </tr><tr>
+        <td>
+            <span id="fileUploader" class="default"></span>
+            <input id="fileReader" type="file">
+        </td>
+    </tr><tr>
+        <td><select id="size">
+            <option selected disabled default>Choose Size:</option>
+            <optgroup label="iPhone"></optgroup>
+            <optgroup label="non-iPhone"></optgroup>
+        </select></td>
+    </tr><tr>
+        <td>
+            <input id="terms" type="checkbox">
+            <label for="terms">I have read & agreed to the
+                <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#terms" target="_blank">terms</a>.
+            </label>
+        </td>
+    </tr><tr id="termsError">
+        <td>
+            * Error... make sure to choose size and check the terms ;)
+        </td>
+    </tr><tr>
+        <td><button id="submit">Submit!</button></td>
+    </tr>
+</table>
+
+<script>
+    sizeId = Object.keys(sizes)
+    for (i = 1; i < sizeId.length-1; i++)
+        $('#size optgroup[label="iPhone"]').append(`
+            <option value="${sizeId[i]}">${sizes[sizeId[i]][1]}</option>
+        `)
+    for (i = sizeId.length-1; i <= sizeId.length-1; i++)
+        $('#size optgroup[label="non-iPhone"]').append(`
+            <option value="${sizeId[i]}">${sizes[sizeId[i]][1]}</option>
+        `)
+
+    $('#fileUploader').click(() => { $('#fileReader').click() })
+
+    var newHS
+    $('#fileReader').change(() => {
+        setTimeout(() => { $('#fileError').fadeIn() }, 1000)
+
+        var formData = new FormData()
+            formData.append('image', $('#fileReader')[0].files[0])
+
+        $.ajax({
+            url: 'https://api.imgur.com/3/image',
+            type: 'POST',
+            datatype: 'json',
+            headers: {
+                    'Authorization': 'Client-ID 1f37facd924fbb3'
+                },
+            data: formData,
+            processData: false,
+            contentType: false,
+            cache: false,
+            success: function(r) {
+                $('#fileUploader')
+                    .removeClass('default')
+                    .css({
+                        'background-image': `url('${imgurRes(r.data.link, 's')}')`
+                    })
+                return newHS = r.data.link
+            }
+        })
+    })
+
+    $('#submit').click(() => {
+        totalHS = $('#homescreens span').length + 1
+        index0 = ''
+        if (totalHS.toString().length < 4)
+            for (i = 4 - totalHS.toString().length; i > 0; i--)
+                index0 += '0'
+        if (newHS != undefined && $('#size').val() != null && $('#terms').prop('checked')) {
+            $('#termsError').fadeOut()
+
+            date = new Date()
+                y = date.getFullYear()
+                m = date.getMonth()+1;      if (m < 10) m = `0${m}`
+                d = date.getDate();         if (d < 10) d = `0${d}`
+                hr = date.getHours();       if (hr < 10) hr = `0${hr}`
+                min = date.getMinutes();    if (min < 10) min = `0${min}`
+                sec = date.getSeconds();    if (sec < 10) sec = `0${sec}`
+                geo = date.toString().match(/\(([A-Za-z\s].*)\)/)[1]
+                timeData = date.getTime()
+            timestamp = `${y}/${m}/${d} - ${hr}:${min}:${sec} (${geo})`
+
+            data = {
+                name: $('#name').val(),
+                homescreen: newHS,
+                size: $('#size').val(),
+                date: timestamp
+            }
+            firebase.database().ref(`hs_${index0 + totalHS}`).set(data)
+
+            // Clear Form
+            $('#name').val('')
+            $('#fileUploader').addClass('default')
+            $('#size option[disabled]').prop('selected', true)
+            $('#terms').prop('checked', false)
+            $('#termsError').hide()
+        } else $('#termsError').fadeIn()
+
+    })
+</script>

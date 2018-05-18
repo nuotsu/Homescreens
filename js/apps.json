@@ -1,0 +1,60 @@
+{
+    "proposal": {
+        "location": "dock",
+        "label": "Proposal",
+        "icon": "logo.jpg",
+        "link": "https://github.com/nuotsu/Homescreens/blob/master/README.md"
+    },
+    "numbers": {
+        "location": "dock",
+        "label": "Numbers",
+        "link": "#numbers"
+    },
+    "upload": {
+        "location": "dock",
+        "label": "Upload",
+        "icon": "upload.jpg",
+        "link": "#upload"
+    },
+    "creator": {
+        "location": "dock",
+        "label": "Artist",
+        "icon": "cop.jpg",
+        "link": "https://nuotsu.github.io"
+    },
+    "art-unite": {
+        "location": "page",
+        "label": "UNITE",
+        "icon": "art-unite.jpg",
+        "link": "#art-unite"
+    },
+    "art-div-h": {
+        "location": "page",
+        "label": "DIVIDE (H)",
+        "icon": "art-div-h.jpg",
+        "link": "#art-div-h"
+    },
+    "art-div-v": {
+        "location": "page",
+        "label": "DIVIDE (V)",
+        "icon": "art-div-v.jpg",
+        "link": "#art-div-v"
+    },
+    "art-all": {
+        "location": "page",
+        "label": "ALL",
+        "icon": "art-all.gif",
+        "link": "#art-all"
+    },
+    "art-one": {
+        "location": "page",
+        "label": "ONE",
+        "icon": "one.gif",
+        "link": "#art-one"
+    },
+    "preview": {
+        "location": "page",
+        "label": "Preview",
+        "link": "#preview"
+    }
+}

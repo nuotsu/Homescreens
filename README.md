@@ -16,14 +16,14 @@ Mitchell Christ &nbsp;|&nbsp; _Digital Media Arts, B.F.A., SJSU_
 
 Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 
-![v6](https://i.imgur.com/fqrll0F.jpg)
+![v6]()
 
 ## Posters
-[<img src="img/posters/poster-1.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg)
-[<img src="img/posters/poster-1a.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg)
-[<img src="img/posters/poster-2.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg)
-[<img src="img/posters/poster-3.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
-[<img src="img/posters/poster-4.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/8hgYlXs.jpg)
+[<img src="https://i.imgur.com/gFC8EqL.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg)
+[<img src="https://i.imgur.com/aYFdusi.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/rTxTOlC.jpg)
+[<img src="https://i.imgur.com/H2vJoQo.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/BFhkOYg.jpg)
+[<img src="https://i.imgur.com/0Yhmw4u.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/z7pcGru.jpg)
+[<img src="https://i.imgur.com/oEQsPfu.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/8hgYlXs.jpg)
 
 ## Statement
 The 'homescreen' is the main page of smart devices that nests applications and widgets. Its appearance changes as a user customizes his/her arrangements of apps and applies themes and wallpapers. Because they are customizable, the homescreens reflect the users’ creativity, personality, and individuality. I believe smart devices are an extension of the self, and the homescreens are reflections of the self that each reveal an identity.
@@ -38,7 +38,7 @@ This installation is partly inspired by my personal experience with _shūji_ (�
 
 ## Documentation
 
-- [Photos](https://nuotsu.github.io/works.html?=hs-doc)
+- [Photos](https://nuotsu.github.io/#design)
 - [Video](https://youtu.be/oFnIf2n3dIw)
 
 ## Inspired Artists

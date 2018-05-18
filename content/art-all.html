@@ -1,0 +1,47 @@
+<h1>Art — ALL</h1>
+
+<figure class="art-all"></figure>
+
+<script>
+    columns = 10
+    for (i = 0; i < columns; i++)
+        $('figure.art-all').append('<p class="column"></p>')
+    $('figure.art-all .column').width(`calc(100% / ${columns})`)
+
+    shuffle(hsList)
+    for (i in hsList) {
+        if (cIndex >= columns) cIndex = 0
+        $('figure.art-all .column').eq(cIndex).append(`<img src="${imgurRes(hsList[i], 'l')}">`)
+        cIndex++
+    }
+
+    sec = 75
+    $('figure.art-all .column img').hide()
+    setTimeout(() => {
+        $('figure.art-all .column img').fadeIn()
+        odd = $('figure.art-all .column:odd')
+        oddHgt = []
+        for (i = 0; i < odd.length; i++) {
+            oddHgt[i] = 0
+            for (j = 0; j < odd.eq(i).find('img').length; j++)
+                oddHgt[i] += odd.eq(i).find('img').eq(j).height()
+            odd.eq(i)
+                .animate({ scrollTop: oddHgt[i] }, 0)
+                .animate({ scrollTop: 0 }, 1000 * sec, 'linear')
+        }
+
+        even = $('figure.art-all .column:even')
+        evenHgt = []
+        for (i = 0; i < even.length; i++) {
+            evenHgt[i] = 0
+            for (j = 0; j < even.eq(i).find('img').length; j++)
+                evenHgt[i] += even.eq(i).find('img').eq(j).height()
+            even.eq(i)
+                .animate({ scrollTop: evenHgt[i] * 2.55/3.5}, 1000 * sec, 'linear')
+        }
+
+        setTimeout(() => {
+            $('figure[app="art-all"] a').click()
+        }, 1000 * sec)
+    }, 1000*1)
+</script>

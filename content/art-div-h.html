@@ -1,0 +1,21 @@
+<h1>Art — DIVIDE (Horizontal)</h1>
+
+<figure class="art-div-h">
+    <div class="divide"></div>
+</figure>
+
+<script>
+    shuffle(hsList)
+    topOffset = 0
+    for (i in hsList) {
+        $('figure.art-div-h .divide').append(`
+            <span style="background-image: url('${imgurRes(hsList[i], 'm')}');"></span>
+        `)
+        $('figure.art-div-h .divide span').eq(i).css({
+            'height': $('figure.art-div-h').height() / hsList.length,
+            'background-position': `50% -${topOffset}px`,
+            'background-repeat': 'no-repeat'
+        })
+        topOffset += $('figure.art-div-h').height() / hsList.length
+    }
+</script>

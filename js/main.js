@@ -1,196 +1,168 @@
-// HS Types
-    hs_types = [
-        ['all', 'All'],
-        ['iS', 'iPhone (S)', '5 / 5s / SE'],
-        ['iM', 'iPhone (M)', '6 / 6s / 7 / 8'],
-        ['iL', 'iPhone (L)', '6+ / 6s+ / 7+ / 8+'],
-        ['iX', 'iPhone X',  'X'],
-        ['a', 'Android', 'Android']
-    ]
+// Initialize apps.json
+var apps = []
+$.ajax({
+    url: 'js/apps.json',
+    dataType: 'json',
+    async: false,
+    success: function(appsJSON) {
+        apps = appsJSON
+    }
+})
+for (i in apps) {
+    $(`#${apps[i].location}`).append(`
+        <figure
+            app="${i}"
+            app-label="${apps[i].label}"
+            app-icon="${apps[i].icon}"
+            app-link="${apps[i].link}"
+        ></figure>
+    `)
+}
 
-// Generated Artwork
-    $('#gen-art select:not(#art-do3d)').each(function() {
-        for (i in hs_types)
-            $(this).append(`<option value="${hs_types[i][0]}">${hs_types[i][1]}</option>`)
-    })
+$('main figure').each(function() {
+    $(this).append(`
+        <a
+            href="${$(this).attr('app-link')}"
+            class="icon"
+            style="
+                background-image: url('img/${$(this).attr('app-icon')}');
+            "
+        ></a>
+        <p class="label">${$(this).attr('app-label')}</p>
+    `)
+    if ($('a', this).attr('href').indexOf('https://') != -1)
+        $('a', this).attr('target', '_blank')
+})
+$('figure[app="numbers"] a').append('<em></em>')
 
-    $('#gen-art select').change(function() {
-        window.location.href = `art/${$(this).attr('id').split('art-')[1]}.html?art=${$(this).val()}`
-    })
+// Content
+function loadContent() {
+    hash = location.hash.substr(1)
+    if (hash != '') {
+        $('article').addClass('opened')
+        $('#content')
+            .attr('class', hash)
+            .load(`content/${hash}.html`)
+    }
 
-// Information
-    for (i in hs_types)
-        $('#info table').append(`
-            <tr>
-                <td>${hs_types[i][1]}</td>
-                <td>→</td>
-                <td id="stat_${hs_types[i][0]}">0</td>
-            </tr>
-        `)
-
-// Uploader
-    for (i = 1; i < hs_types.length-1; i++)
-        $('#uploader #size [label="iPhone"]').append(
-            `<option value="${hs_types[i][0]}">${hs_types[i][2]}</option>`
-        )
-    for (i = hs_types.length-1; i < hs_types.length; i++)
-        $('#uploader #size [label="non-iPhone"]').append(`<option value="${hs_types[i][0]}">${hs_types[i][2]}</option>`)
-
-    var newHS
-    $('#uploader #upload img').click(() => $('#uploader #upload input').click())
-    $('#uploader #upload input').change(function() {
-        setTimeout(() => {
-            $('#uploader #notice').fadeIn('show')
-            adjustDetailsHeights()
-        }, 1000)
-
-        var formData = new FormData()
-            formData.append('image', $('#uploader #upload input')[0].files[0])
-
-        $.ajax({
-            url: 'https://api.imgur.com/3/image',
-            type: 'POST',
-            datatype: 'json',
-            headers: {
-                    'Authorization': 'Client-ID 1f37facd924fbb3'
-                },
-            data: formData,
-            processData: false,
-            contentType: false,
-            cache: false,
-            success: function(response) {
-                url = response.data.link.slice(0, 27)
-                ext = response.data.link.slice(27)
-                res = 's'
-                $('#uploader #upload img').css({
-                    'background-image': `url(${url+res+ext})`
-                })
-                return newHS = response.data.link
-            }
+    $(document)
+        .ajaxStart(() => {
+            $('#content').hide()
+            $('#loading').fadeIn()
         })
-    })
+        .ajaxStop(() => {
+            $('#loading').fadeOut()
+            $('#content').fadeIn()
+        })
+}
+loadContent()
+$('main figure a').click(() => { setTimeout(loadContent) })
 
-    $('#uploader #submit').click(function() {
-        if ($('#uploader #terms').prop('checked') == true &&
-            newHS != undefined &&
-            $('#uploader #size').val() != null) {
-                // Submit New HS
-                    var id = ''
-                        if (totalHS < 9999 && totalHS >= 999) id = `hs_${totalHS + 1}`
-                        if (totalHS < 999 && totalHS >= 99) id = `hs_0${totalHS + 1}`
-                        if (totalHS < 99 && totalHS >= 9) id = `hs_00${totalHS + 1}`
-                        if (totalHS < 9 ) id = `hs_000${totalHS + 1}`
-                    var data = {
-                        name: $('#uploader #name').val(),
-                        homescreen: newHS,
-                        size: $('#uploader #size').val()
-                    }
-                    firebase.database().ref(id).set(data)
-
-                // Clear Form
-                    $('#uploader #name').val('')
-                    $('#uploader #upload img').css('background-image', 'none')
-                    $('#uploader #size option[disabled]').prop('selected', true)
-                    $('#uploader #terms').prop('checked', false)
-                    $('#uploader #notice, #uploader #error').hide()
-            } else $('#error').fadeIn()
-    })
+$('#close').click(() => {
+    window.history.pushState('', '', '/')
+    $('article').removeClass('opened')
+    $('#content').html('')
+})
+$(document).keydown(function(e) {
+	if (e.which == 27) $('#close').click();	// esc
+});
 
 // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyBGCtanYNoDYfp0by5ny5-MmAIpRNCySko",
-        authDomain: "homescreens-nuotsu.firebaseapp.com",
-        databaseURL: "https://homescreens-nuotsu.firebaseio.com",
-        projectId: "homescreens-nuotsu",
-        storageBucket: "homescreens-nuotsu.appspot.com",
-        messagingSenderId: "530912246125"
-    };
-    firebase.initializeApp(config);
+var config = {
+    apiKey: "AIzaSyBGCtanYNoDYfp0by5ny5-MmAIpRNCySko",
+    authDomain: "homescreens-nuotsu.firebaseapp.com",
+    databaseURL: "https://homescreens-nuotsu.firebaseio.com",
+    projectId: "homescreens-nuotsu",
+    storageBucket: "homescreens-nuotsu.appspot.com",
+    messagingSenderId: "530912246125"
+};
+firebase.initializeApp(config);
 
-// Load Homescreens
-    firebase.database().ref().on('value', function(snapshot) {
-        $('#hs-bg').html('')
-        for (i in snapshot.val())
-            $('#hs-bg').prepend(`
-                <hs-img
-                    hsID="${i}"
-                    hsName="${snapshot.val()[i].name}"
-                    hsSize="${snapshot.val()[i].size}"
-                    hsImg="${snapshot.val()[i].homescreen}"
-                ></hs-img>
-            `)
-        totalHS = snapshot.numChildren()
-        $('#hs-bg hs-img').each(function() {
-            imgURL = $(this).imgurRes('hsImg', 's')
-            $(this).css({
-                'background-image': `url('${imgURL}')`
+sizes = {
+    'all': ['All'],
+    'iS': ['iPhone (S)', '5 / 5s / SE'],
+    'iM': ['iPhone (M)', '6 / 6s / 7 / 8'],
+    'iL': ['iPhone (L)', '6+ / 6s+ / 7+ / 8+'],
+    'iX': ['iPhone X',  'X'],
+    'a': ['Android', 'Android']
+}
+
+firebase.database().ref().on('value', (hs) => {
+    for (i in hs.val())
+        $('#homescreens').prepend(`
+            <span
+                hs_id="${i}"
+                hs_name="${hs.val()[i].name}"
+                hs_size="${hs.val()[i].size}"
+                hs_date="${hs.val()[i].date}"
+                hs_link="${hs.val()[i].homescreen}"
+                style="background-image: url('${imgurRes(hs.val()[i].homescreen, 's')}');"
+            ></span>
+        `)
+
+    cIndex = 0
+    hsList = []
+    for (i in hs.val()) {
+        hsList.push(hs.val()[i].homescreen)
+    }
+
+    rand = Math.floor(Math.random() * $('aside#homescreens span').length)
+    randHS = $('aside#homescreens span').eq(rand)
+    function previewHS(r) {
+        $('figure[app="preview"] a')
+            .attr('hs_link', r)
+            .css({
+                'background-image': `url('${imgurRes(r.attr('hs_link'), 's')}')`
             })
+
+        hs_id = r.attr('hs_id')
+        hs_name = r.attr('hs_name')
+            if (hs_name == '') hs_name = '--'
+        hs_size = sizes[r.attr('hs_size')][0]
+        hs_date = r.attr('hs_date')
+            if (hs_date == 'undefined') hs_date = '--'
+        hs_link = r.attr('hs_link')
+    }
+    previewHS(randHS)
+
+    $('aside#homescreens span').each(function() {
+        $(this).click(() => {
+            previewHS($(this))
+            loadPreviewHS()
         })
-
-        for (i in hs_types)
-            $(`#info table #stat_${hs_types[i][0]}`).html($(`#hs-bg hs-img[hsSize="${hs_types[i][0]}"]`).length)
-        $('#info table #stat_all').html(totalHS)
-
-        // Preview Homescreen
-            $('#hs-bg hs-img').click(function() {
-                $('details[lv="1"], #preview').prop('open', true)
-                $('#preview table').show()
-
-                imgURL = $(this).imgurRes('hsImg', 'm')
-                $('#preview #prev_img').attr({
-                    'href': `${$(this).attr('hsImg')}`,
-                    'target': '_blank'
-                })
-                $('#preview #prev_img img').attr({
-                    'src': imgURL
-                })
-                $('#preview #prev_info').html(`
-                    <i>${$(this).attr('hsID')}_${$(this).attr('hsSize')}</i>
-                    <b>${$(this).attr('hsName')}</b>
-                `)
-
-                adjustDetailsHeights()
-            })
-
-        return totalHS
     })
+
+    $('figure[app="numbers"] a em').html(hs.numChildren())
+})
+
+// Load PreviewHS into Preview Table
+function loadPreviewHS() {
+    $('#prvw_id').html(hs_id)
+    $('#prvw_name').html(hs_name)
+    $('#prvw_size').html(hs_size)
+    $('#prvw_date').html(hs_date)
+    $('#prvw_link a')
+        .attr({ 'href': hs_link, 'target': '_blank' })
+        .html(hs_link.split('https://')[1])
+    $('#previewHS')
+        .attr({ 'href': hs_link, 'target': '_blank' })
+        .find('img').attr('src', hs_link)
+}
 
 // Imgur Resolution
-    $.fn.imgurRes = function(attr, resolution) {
-        url = this.attr(attr).slice(0, 27)
-        ext = this.attr(attr).slice(27)
-        res = resolution
-        return url + res + ext
-    }
+function imgurRes(r, resolution) {
+    url = r.slice(0, 27)
+    ext = r.slice(27)
+    res = resolution
+    return url + res + ext
+}
 
-// URL Parameters
-    if (window.location.href.indexOf('?upload') > 0) {
-        $('details[lv="2"]').prop('open', false)
-        $('details[lv="1"], #uploader').prop('open', true)
+// Shuffle Array
+function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1))
+        temp = a[i]
+        a[i] = a[j]
+        a[j] = temp
     }
-
-// Desktop <Details>
-    openDetailsOrNot()
-    function openDetailsOrNot() {
-        $('details[lv="2"]').each(function() {
-            if ($(this).css('display') == 'inline-block')
-                $(this).prop('open', true)
-        })
-    }
-
-    setTimeout(() => adjustDetailsHeights(), 100)
-    $(window).resize(adjustDetailsHeights)
-    $('details, #uploader #submit').click(function() {
-        setTimeout(() => adjustDetailsHeights())
-    })
-    function adjustDetailsHeights() {
-        var detailsHeights = []
-        $('details[lv="2"]').each(function() {
-            detailsHeights.push($(this).height())
-            $('details[lv="2"]').css({
-                'min-height': Math.max.apply(Math, detailsHeights)
-            })
-        })
-        if ($(window).width() <= 1000)
-            $('details[lv="2"]').css('min-height', 'auto')
-    }
+}

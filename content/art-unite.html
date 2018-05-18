@@ -1,0 +1,15 @@
+<h1>Art — UNITE</h1>
+
+<figure class="art-unite"></figure>
+
+<script>
+    shuffle(hsList)
+    for (i in hsList)
+        $('figure.art-unite').append(`
+            <span style="background-image: url('${imgurRes(hsList[i], 'l')}');"></span>
+        `)
+    $('figure.art-unite').prepend('<span></span>')
+    $('figure.art-unite span')
+        .css({ 'opacity': .01 })
+        .top($('#content h1').height() + 20)
+</script>

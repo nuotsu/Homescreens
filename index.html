@@ -3,113 +3,33 @@
 
 <head>
     <title>Homescreens</title>
-    <link rel="shortcut icon" href="img/favicon.jpg">
+    <link rel="shortcut icon" href="img/logo.jpg">
 
     <meta charset="utf-8">
-    <meta name="author" content="Mitchell Christ, nuotsu">
-    <meta name="keywords" content="Homescreens, nuotsu, SJSU">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Mitchell Kazumaru Christ, nuotsu">
+    <meta name="keywords" content="homescreens, SJSU">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <details lv="1"><summary>Homescreens</summary>
-        <details id="gen-art" lv="2" open><summary>Generated Artwork</summary>
-            <table><tr>
-                <td><select id="art-unite">
-                    <option selected disabled default>"UNITE"</option>
-                </select></td>
-                <td><select id="art-one">
-                    <option selected disabled default>"ONE"</option>
-                </select></td>
-            </tr><tr>
-                <td><select id="art-divide_h">
-                    <option selected disabled default>"DIVIDE (H)"</option>
-                </select></td>
-                <td><select id="art-divide_v">
-                    <option selected disabled default>"DIVIDE (V)"</option>
-                </select></td>
-            </tr><tr>
-                <td colspan="2"><select id="art-all">
-                    <option selected disabled default>"ALL"</option>
-                </select></td>
-            </tr><tr>
-                <td colspan="2"><select id="art-do3d">
-                    <option selected disabled default>3D</option>
-                    <option value="indv">Individual</option>
-                    <option value="hs-art">Homescreen Art</option>
-                    <option value="world">Homescreen World</option>
-                </select></td>
-            </tr></table>
-            <p class="link">
-                <a href="gallery.html">Virtual Gallery</a>
-            </p>
-        </details>
+    <main id="page">
+        <div id="dock"></div>
+    </main>
 
-        <details id="info" lv="2" open><summary>Information</summary>
-            <table></table>
-            <p class="link"><a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#proposal" target="_blank">
-                Project Proposal
-            </a></p>
-            <p class="link">
-                &copy;
-                <a href="https://nuotsu.github.io/home" target="_blank">Nuotsu</a>
-                2018
-            </p>
-        </details>
+    <article>
+        <span id="close"></span>
+        <span id="loading"></span>
+        <div id="content"></div>
+    </article>
 
-        <details id="uploader" lv="2"><summary>Upload</summary>
-            <table><tr>
-                <td><input id="name" type="text" placeholder="Name (Optional)"></td>
-            </tr><tr>
-                <td id="upload">
-                    <img src="img/upload.png">
-                    <input type="file" accept="image/*">
-                </td>
-            </tr><tr id="notice">
-                <td>
-                    * Please wait until your screenshot appears above ↑<br>
-                    (May take up to 15 seconds...)
-                </td>
-            </tr><tr>
-                <td><select id="size">
-                    <option selected disabled default>Choose Size:</option>
-                    <optgroup label="iPhone"></optgroup>
-                    <optgroup label="non-iPhone"></optgroup>
-                </select></td>
-            </tr><tr>
-                <td>
-                    <input id="terms" type="checkbox">
-                    <label for="terms">
-                        I have read & accept the
-                        <a href="https://github.com/nuotsu/Homescreens/blob/master/README.md#terms" target="_blank">terms</a>.
-                    </label>
-                </td>
-            </tr><tr id="error">
-                <td>
-                    * Error... make sure to choose size and check the terms ;)
-                </td>
-            </tr><tr>
-                <td><button id="submit">Submit</button></td>
-            </tr></table>
-        </details>
-
-        <details id="preview" lv="2"><summary>Preview</summary>
-            <table><tr>
-                <td><a id="prev_img"><img></a></td>
-            </tr><tr>
-                <td id="prev_info"></td>
-            </tr></table>
-        </details>
-    </details>
-
-    <main id="hs-bg"></main>
+    <aside id="homescreens"></aside>
 
     <!-- .js -->
-        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

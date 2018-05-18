@@ -1,0 +1,16 @@
+<h1>Art — ONE</h1>
+
+<figure class="art-one">
+    <img>
+</figure>
+
+<script>
+    function art_one() {
+        r = Math.floor(Math.random() * hsList.length)
+        $('figure.art-one img').attr('src', imgurRes(hsList[r], 'l'))
+    }
+    art_one()
+    interval = setInterval(art_one, 1000*1)
+
+    $('#close').click(() => { clearInterval(interval) })
+</script>

@@ -1,0 +1,25 @@
+<h1>Numbers</h1>
+
+<table></table>
+
+<script>
+    for (i in sizes) sizes[i][2] = 0
+
+    firebase.database().ref().on('value', (hs) => {
+        for (i in hs.val())
+        for (j in sizes)
+            if (hs.val()[i].size == j)
+                sizes[j][2]++
+
+        for (i in sizes)
+            $('table').append(`
+                <tr>
+                    <td>${sizes[i][0]}</td>
+                    <td>→</td>
+                    <td id="${i}">${sizes[i][2]}</td>
+                </tr>
+            `)
+
+        $('#all').html(hs.numChildren())
+    })
+</script>

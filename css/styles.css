@@ -1,236 +1,281 @@
 /* Fonts */
-    @font-face {
-        font-family: 'SFPD';
-        src: url('../fonts/SF-Pro-Display-Regular.otf');
-    }
-    @font-face {
-        font-family: 'SFPD Bold';
-        src: url('../fonts/SF-Pro-Display-Bold.otf');
-    }
-    @font-face {
-        font-family: 'SF Mono';
-        src: url('../fonts/SFMono.otf');
-    }
-    @font-face {
-        font-family: 'SF Mono Bold';
-        src: url('../fonts/SFMono-Bold.otf.otf');
-    }
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,700");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, "Roboto", sans-serif;
+  color: #fff; }
 
-/* Variables */
-    :root {
-        --blur: blur(10px) saturate(1.8);
+body {
+  background: #000; }
 
-        --bg: rgba(0,0,0, 0.7);
-        --borad: 4px;
-    }
+h1 {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4); }
 
-/* Common */
-    * {
-        margin: 0;
-        padding: 0;
-        color: #fff;
-    }
-    body {
-        background: #000;
-        font-family: 'SFPD';
-    }
+a {
+  text-decoration: none; }
 
-/* <details> */
-    details > * {
-        padding: 4px;
-        text-align: center;
-    }
-    details summary {
-        cursor: pointer;
-        outline: none;
-        text-align: left;
-        font-family: 'SFPD Bold';
-    }
-    summary::-webkit-details-marker {
-        vertical-align: middle;
-        color: rgba(0,0,0, 0);
-        background:
-            url('../img/logo_none.svg')
-            center/cover no-repeat;
-    }
-    details[lv="1"] > summary::-webkit-details-marker {
-        width: 24px;
-        height: 24px;
-    }
-    details[lv="2"] > summary::-webkit-details-marker {
-        width: 18px;
-        height: 18px;
-    }
-    details[open] > summary::-webkit-details-marker {
-        background-image: url('../img/logo.svg');
-    }
-
-    details[lv="1"] {
-        position: fixed;
+main#page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 320px;
+  height: 568px;
+  background: rgba(40, 40, 40, 0.9);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); }
+  main#page #dock {
+    position: absolute;
+    bottom: 0;
+    padding: calc(64px / 4) 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2); }
+    main#page #dock figure {
+      padding: 0; }
+  main#page figure {
+    float: left;
+    padding: calc(64px / 2) 0 0 0;
+    width: calc(100% / 4);
+    text-align: center; }
+    main#page figure a.icon {
+      position: relative;
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      border-radius: 11.6363636364px;
+      background: #fff center/cover no-repeat; }
+      main#page figure a.icon em {
+        position: absolute;
         left: 50%;
-        bottom: 0;
-        z-index: 1;
-        transform: translate(-50%, 0);
-        min-width: 300px;
-        max-height: calc(100vh - 45px);
-        overflow: scroll;
-        /* -webkit-overflow-scrolling: touch; */
-        border-radius: 6px 6px 0 0;
-        background: #000;
-    }
-    details[lv="2"] {
-        margin: 4px 0;
-        background: rgba(255,255,255, 0.3);
-    }
-
-    details[lv="1"] > summary {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        padding: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 24px;
-        background: #000;
-    }
-    details[lv="2"] > summary {
-        font-size: 18px;
-    }
-
-    details table {
-        margin: 0 auto;
-        text-align: center;
-    }
-    details .link {
-        margin: 10px auto;
-    }
-
-    #info table tr td:nth-child(2) {
-        padding: 0 10px;
-    }
-    #info table tr td:nth-child(3) {
-        font: italic 16px 'SF Mono';
-    }
-
-    #uploader #upload img {
-        cursor: pointer;
-        padding: 40px;
-        width: 60px;
-        background:
-            var(--bg)
-            center/cover no-repeat;
-        border-radius: var(--borad);
-    }
-    #uploader #upload input,
-    #uploader #notice,
-    #uploader #error {
-        display: none;
-        font: 10px 'SF Mono';
-        font-style: italic;
-    }
-    #uploader #error *,
-    #uploader #notice * {
-        color: rgba(255,255,255, 0.7);
-    }
-
-    #preview table {
-        display: none;
-    }
-    #preview #prev_img img {
-        max-height: 200px;
-        border-radius: var(--borad);
-    }
-    #preview #prev_info i {
-        font: italic 16px 'SF Mono';
-    }
-    #preview #prev_info > * {
-        display: table;
-        margin: 0 auto;
-    }
-
-/* Inputs */
-    table {
-        border-collapse: collapse;
-    }
-    table td {
-        padding: 2px;
-    }
-    select,
-    button,
-    #uploader #name,
-    #uploader #size,
-    #uploader #submit,
-    #hs3d-art a {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        outline: none;
-        padding: 4px;
-        background: var(--bg);
-        border-radius: var(--borad);
-        border: none;
-        font-size: 12px;
+        font-style: normal;
         font-weight: bold;
-        text-align: center;
-    }
-    details select {
-        cursor: pointer;
-    }
-    #gen-art select,
-    #hs-list {
-        width: 100px;
-    }
-    #uploader #name {
-        width: 132px;
-    }
-    #uploader #size {
-        width: 140px;
-    }
-    button:active {
-        opacity: 0.8;
-    }
+        color: #000; }
+    main#page figure p.label {
+      font-size: 12px; }
 
-/* Homescreen BG */
-    hs-img {
-        display: inline-block;
-        float: left;
-        width: calc(100vw / 16);
-        height: calc(100vw / 16);
-        background: center/cover no-repeat;
-    }
+article {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  padding: 20px;
+  width: calc(90vw - 40px);
+  height: calc(95vh - 40px);
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  background: rgba(40, 40, 40, 0.9);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out; }
+  article.opened {
+    transform: translate(-50%, 0); }
+  article *:not(h1) {
+    font-size: 18px; }
+  article #close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    width: 40px;
+    height: 40px; }
+    article #close::before, article #close::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 8px;
+      background: #fff; }
+    article #close::before {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    article #close::after {
+      transform: translate(-50%, -50%) rotate(135deg); }
+  article #loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-radius: 50px;
+    animation: spin 1s ease-in-out infinite; }
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  90% {
+    transform: translate(-50%, -50%) rotate(360deg); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+  article #content {
+    display: none; }
+  article .preview #previewHS,
+  article .preview table {
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+    vertical-align: middle; }
+  article .preview #previewHS img {
+    max-width: 320px;
+    height: 80vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); }
+  article .preview table {
+    text-align: left; }
+    article .preview table tr td {
+      padding: 0 4px; }
+    article .preview table tr td:first-child {
+      text-align: right;
+      opacity: 0.5; }
+  article .numbers table {
+    margin: 0 auto; }
+    article .numbers table td {
+      padding: 4px;
+      text-align: center; }
+      article .numbers table td:nth-child(2) {
+        opacity: 0.5; }
+  article .upload table {
+    margin: 0 auto; }
+    article .upload table td {
+      padding: 2px 0; }
+  article .upload input:not([type="checkbox"]), article .upload select, article .upload #submit {
+    padding: 4px 0;
+    width: 200px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2) center/cover no-repeat;
+    text-align: center; }
+  article .upload #fileUploader {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.2) center/cover no-repeat;
+    text-align: center; }
+    article .upload #fileUploader.default {
+      background-image: url("../img/upload.png") !important;
+      background-size: 75px; }
+  article .upload #fileReader {
+    display: none; }
+  article .upload #termsError {
+    display: none; }
+    article .upload #termsError td {
+      font-family: monospace;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.2); }
+  article .upload #submit {
+    cursor: pointer;
+    padding: 4px 8px;
+    width: initial; }
+  article [class*=art] figure {
+    pointer-events: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh; }
+  article [class*=art].art-unite span {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: inline-block;
+    width: calc(80vh * .5634);
+    height: 80vh;
+    background: center/cover no-repeat; }
+    article [class*=art].art-unite span:first-child {
+      background: #000;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+      opacity: 1 !important; }
+  article [class*=art].art-div-h .divide {
+    margin: 0 auto;
+    width: calc(80vh * .5634);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); }
+    article [class*=art].art-div-h .divide span {
+      display: table;
+      margin: 0 auto;
+      width: calc(80vh * .5634);
+      background: center/cover no-repeat; }
+  article [class*=art].art-div-v .divide {
+    margin: 0 auto;
+    width: calc(80vh * .5634);
+    height: 80vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); }
+    article [class*=art].art-div-v .divide span {
+      float: left;
+      display: inline-block;
+      height: 80vh;
+      background: center/cover no-repeat; }
+  article [class*=art].art-all .column {
+    display: inline-block;
+    height: 80vh;
+    vertical-align: top;
+    overflow-y: scroll; }
+    article [class*=art].art-all .column::-webkit-scrollbar {
+      display: none; }
+    article [class*=art].art-all .column img {
+      float: left;
+      width: 100%; }
+  article [class*=art].art-one img {
+    height: 80vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7); }
 
-@media screen and (min-width: 1000px) {
-    details[lv="1"][open] {
-        width: 90vw;
-    }
-    details[lv="2"] {
-        display: inline-block;
-        vertical-align: top;
-        width: calc(100% / 4 - 10.5px);
-    }
+aside#homescreens {
+  position: relative;
+  z-index: -1;
+  opacity: 0.5; }
+  aside#homescreens span {
+    float: left;
+    display: inline-block;
+    width: calc(100vw / 15);
+    height: calc(100vw / 15);
+    background: center/cover no-repeat; }
 
-    @supports
-        (-webkit-backdrop-filter: var(--blur)) or
-        (-moz-backdrop-filter: var(--blur)) or
-        (-ms-backdrop-filter: var(--blur)) or
-        (-o-backdrop-filter: var(--blur)) or
-        (backdrop-filter: var(--blur)) {
-        details[lv="1"] > summary {
-            background: none;
-        }
-    }
-}
+@media (max-width: 414px) {
+  main#page {
+    width: 100vw;
+    height: 100vh;
+    box-shadow: none; }
+    main#page #dock {
+      padding: calc(100vw / 5 / 4) 0; }
+      main#page #dock figure {
+        padding: 0; }
+    main#page figure {
+      padding: calc(100vw / 5 / 2) 0 0 0; }
+      main#page figure p.icon {
+        width: calc(100vw / 5)-10px;
+        height: calc(100vw / 5)-10px;
+        border-radius: calc(100vw / 5)/5.5; }
 
-@supports
-    (-webkit-backdrop-filter: var(--blur)) or
-    (-moz-backdrop-filter: var(--blur)) or
-    (-ms-backdrop-filter: var(--blur)) or
-    (-o-backdrop-filter: var(--blur)) or
-    (backdrop-filter: var(--blur)) {
-    details[lv="1"] {
-        -webkit-backdrop-filter: var(--blur);
-        -moz-backdrop-filter: var(--blur);
-        -ms-backdrop-filter: var(--blur);
-        -o-backdrop-filter: var(--blur);
-        backdrop-filter: var(--blur);
-        background: rgba(0,0,0, 0.8);
-    }
-}
+  article {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    border-radius: 0;
+    box-shadow: none; }
+    article .preview #previewHS img {
+      max-height: 50vh; }
+    article .upload input:not([type="checkbox"]), article .upload select {
+      width: 85vw; }
+    article .upload #fileUploader {
+      width: 85vw; }
+    article [class*=art] figure img {
+      max-width: 85vw !important; } }
+@supports (backdrop-filter: blur(0)) or (-webkit-backdrop-filter: blur(0)) {
+  main#page, #dock,
+  article {
+    backdrop-filter: blur(10px) saturate(3);
+    -webkit-backdrop-filter: blur(10px) saturate(3);
+    background: rgba(75, 75, 75, 0.7); } }
+
+/*# sourceMappingURL=styles.css.map */
