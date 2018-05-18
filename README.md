@@ -16,7 +16,7 @@ Mitchell Christ &nbsp;|&nbsp; _Digital Media Arts, B.F.A., SJSU_
 
 Advisors:&nbsp; Andrew Blanton &nbsp;&&nbsp; Steve Durie
 
-![v6]()
+![v7](https://i.imgur.com/7beoojj.jpg)
 
 ## Posters
 [<img src="https://i.imgur.com/gFC8EqL.jpg" height="200" style="margin: 0 6px;">](https://i.imgur.com/a693CBt.jpg)
