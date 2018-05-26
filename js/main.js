@@ -59,7 +59,6 @@ loadContent()
 $('main figure a').click(() => { setTimeout(loadContent) })
 
 $('#close').click(() => {
-    window.history.pushState('', '', '/')
     $('article').removeClass('opened')
     $('#content').html('')
 })

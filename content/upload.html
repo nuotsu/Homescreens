@@ -89,7 +89,6 @@
                 min = date.getMinutes();    if (min < 10) min = `0${min}`
                 sec = date.getSeconds();    if (sec < 10) sec = `0${sec}`
                 geo = date.toString().match(/\(([A-Za-z\s].*)\)/)[1]
-                timeData = date.getTime()
             timestamp = `${y}/${m}/${d} - ${hr}:${min}:${sec} (${geo})`
 
             data = {
